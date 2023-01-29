@@ -1,0 +1,1792 @@
+@import url('reset.css');
+
+
+.body{
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-size: 21px;
+    position:relative;
+}
+
+.wrapper{
+    width: 100vw;
+    font-family: sans-serif;
+    /* font-family: 'Noto Sans TC', sans-serif; */
+    /* z-index: 2; */
+}
+
+.swiper-wrapper{
+    /* background-size: cover; */
+    width: 100%;
+    /* padding-bottom: 51.9%; */
+}
+
+.swiper img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.swiper-button-prev{
+    color:rgb(255, 227, 195);
+}
+
+.swiper-button-next{
+    color:rgb(255, 227, 195);
+}
+
+span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background-color: rgb(223, 124, 58);
+    opacity: 1;
+  }
+
+.swiper-pagination-bullet {
+    background-color: rgb(230, 230, 230);
+    opacity: 1;
+  }
+
+
+
+.top{
+    height: 55px;
+    width: 100vw;
+    background-color: rgb(31, 41, 50, .46);
+    position:absolute;
+    /* border: 1px solid red; */
+    display:flex;
+    z-index: 2;
+}
+
+
+.top img{
+    height: 50px;
+    margin-left: 10vw;
+    margin-top: 5px;
+}
+.top ul{
+    display:flex;
+    width: 50%;
+    margin-left: auto;
+    margin-right:10vw ;
+    
+    line-height: 55px;
+    height: 55px;
+    position:relative;
+    
+    /* border: 2px solid red; */
+}
+
+
+
+
+.top ul li{
+    flex-grow: 1;
+    
+    
+}
+
+.top ul li a{
+    text-decoration: none;
+    color:white;
+    font-weight:bold;
+    font-size: 1rem;
+    display: block;
+    text-align: left;
+    margin-left: 15px;
+}
+
+.top ul li a:hover{
+    color:rgb(235, 160, 92);
+}
+
+.top ol{
+    background-color:rgb(31, 41, 50, .46);
+    position:absolute;
+    left:467.76px;
+    top:55px;
+    width: 170px;
+    display:none;
+}
+
+.top>ul>li:nth-child(4):hover ol{
+    display:block;
+} 
+
+
+.banner{
+    background-image: url('../images/1.png');
+    background-size: cover;
+    width: 100%;
+    padding-bottom: 51.9%;
+}
+
+
+/* ------ 第一區塊 ------ */
+.content{
+    display:flex;
+    position:relative;
+}
+
+.content img{
+    width: 390px;
+    height:0%;
+    margin-left: 10vw;
+    margin-top: 50px;
+    
+}
+
+.square{
+    background-color:rgb(233, 124, 58);
+    width: 390px;
+    height: 387px;
+    position:absolute;
+    left:10.5vw;
+    top:60px;
+    z-index:-1;
+}
+
+
+.content-text{
+    margin-left: 215px;
+    margin-top: 70px;    
+    margin-right: 130px;
+    /* margin-right: 10vw; */
+    margin-bottom: 140px;
+
+}
+
+.content-text h1{
+    font-size :30px;
+    position:relative;
+    color:rgb(233, 124, 58);
+    font-weight: bold;
+    
+}
+
+.content-text h1:before{
+    content:'';
+    display:block;
+    width: 45px;
+    height: 3px;
+    background-color:rgb(233, 124, 58);
+
+    position:absolute;
+    left: -60px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    
+}
+
+.content-text p{
+    margin-top: 70px;
+    line-height: 1.5;
+    font-size: 1rem;
+}
+
+/* 按鈕 */
+.content-text a{
+    display :block;
+    width: 130px;
+    height: 40px;
+    border: 2px solid rgb(233, 124, 58); 
+    text-decoration: none;
+    font-size: 20px;
+    color:black;
+    text-align: center;
+    line-height: 2;
+    margin-left: auto;
+    margin-top: 66px;
+}
+
+.content-text a:hover{
+    background-color: rgb(233, 124, 58);
+    color:white;
+}
+
+
+
+/* ------ 第二區塊 ------ */
+
+.content-2 h1{
+    font-size :30px;
+    color:rgb(233, 124, 58);
+    font-weight: bold;
+    text-align: center;
+    padding-top:50px;
+    padding-bottom:25px;
+}
+
+.course{
+    display:flex;
+}
+
+
+.content-2{
+    /* background-image: url('../images/index-background.png'); */
+    /* background-size: 100vw 100%; */
+    background-color: rgb(255, 242, 227);
+    padding-bottom: 50px;
+}
+
+
+
+.course{
+    display:flex;
+    margin-right:10vw;
+    margin-left:10vw;
+    justify-content:center;
+    align-items: center;
+    position:relative;
+}
+
+.course a{
+    display:block;
+    width: 350px;
+    height: 505px;
+    background-color: rgb(255, 255, 255);
+    margin:10px;
+}
+
+.course a:first-child{
+    display:block;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    margin:10px;
+    position:absolute;
+    border-radius: 50%;
+    left:-60px;
+}
+
+.course a:last-child{
+    display:block;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    margin:10px;
+    position:absolute;
+    border-radius: 50%;
+    right :-60px;
+}
+
+.course a h2{
+    color:rgb(193, 115, 44);
+    text-align:center;
+    font-weight:bold;
+    font-size:20px;
+}
+
+.course a p{
+    margin:3% 5% 15px;
+    line-height: 1.5;
+    color:black;
+}
+
+.course img{
+    width:90%;
+    margin:5% 5% 15px;
+}
+
+.course .fa-angle-left{
+    font-size :30px;
+    display:block;
+    text-align: center;
+    line-height: 50px;
+    color:rgb(233, 124, 58);
+    /* position:absolute;
+    left:50%;
+    top:50%; */
+}
+
+.course .fa-angle-right{
+    font-size :30px;
+    display:block;
+    text-align: center;
+    line-height: 50px;
+    color:rgb(233, 124, 58);
+}
+
+.course a{
+    text-decoration: none;
+}
+
+.course a:nth-child(2){
+    width: 295px;
+    height: 435px;
+    background-color: rgb(255, 255, 255);
+}
+
+.course a:nth-child(4){
+    width: 295px;
+    height: 435px;
+    background-color: rgb(255, 255, 255);
+}
+
+/* 第二區塊輪播 */
+
+/* .card{
+    background-color:rgb(231, 231, 231);
+    width: 100%;
+}
+
+.card-content{
+    background-color: #fff;
+    width: 250px;
+}
+
+.card-content-2{
+
+}
+
+.card-content img{
+    width: 250px;
+} */
+#container {
+    /* height: 100vh; */
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 30px;
+    background: rgb(255, 242, 227);
+    display: grid ;
+    place-items: center;
+  }
+  
+  #slider-container {
+    /* height: 350px; */
+    width: 80vw;
+    max-width: 1400px;
+    /* background: #54d5e4; */
+    /* box-shadow: 5px 5px 8px gray inset; */
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+  }
+  
+  #slider-container .btn {
+    position: absolute;
+    top: calc(50% - 30px);
+    height: 30px;
+    width: 30px;
+    border-left: 8px solid rgb(223, 124, 58);
+    border-top: 8px solid rgb(223, 124, 58);
+  }
+  
+  #slider-container .btn:hover {
+    transform: scale(1.2);
+  }
+  
+  #slider-container .btn.inactive {
+    border-color: rgb(240, 206, 173);
+  }
+  
+  #slider-container .btn:first-of-type {
+    transform: rotate(-45deg);
+    left: 10px
+  }
+  
+  #slider-container .btn:last-of-type {
+    transform: rotate(135deg);
+    right: 10px;
+  }
+  
+  #slider-container #slider {
+    display: flex;
+    width: 1000%;
+    height: 100%; 
+    transition: all .5s;
+  }
+  
+  #slider-container #slider .slide {
+    /* height: 90%; */
+    /* height: 100%; */
+    /* height: 100vh; */
+    height: 420px;
+    /* width: 300px; */
+    margin: auto 10px;
+    background-color: #ffffff;
+    /* border:5px solid rgb(223, 124, 58); */
+    border-radius: 15px;
+    overflow: hidden;
+    /* padding:10px; */
+    /* box-shadow: 2px 2px 4px 2px white, -2px -2px 4px 2px white; */
+    /* display: grid; */
+    /* place-items: center; */
+  }
+
+  #slider-container #slider .slide img{
+    width: 100%;
+    /* overflow: hidden; */
+  }
+
+  #slider-container #slider .slide h2{
+    font-size :20px;
+    color:rgb(233, 124, 58);
+    font-weight: bold;
+    text-align: center;
+    padding-top:10px;
+    padding-bottom:5px;
+  }
+
+  #slider-container #slider .slide p{
+    padding: 10px 20px 20px 20px;
+    line-height: 1.5;
+  }
+
+  #container h1{
+    font-size :30px;
+    color:rgb(233, 124, 58);
+    font-weight: bold;
+    text-align: center;
+    padding-top:50px;
+    padding-bottom:25px;
+  }
+
+
+  
+  /* #slider-container #slider .slide span {
+    color: white;
+    font-size: 150px;
+  } */
+  
+  @media only screen and (min-width: 1100px) {
+  
+    #slider-container #slider .slide {
+      width: calc(2.5% - 20px);
+    }
+  
+  }
+  
+  /* @media only screen and (max-width: 1100px) {
+  
+    #slider-container #slider .slide {
+      width: calc(3.3333333% - 10px);
+    }
+  
+  } */
+  
+  @media only screen and (max-width: 900px) {
+  
+    #slider-container #slider .slide {
+      width: calc(5% - 20px);
+    }
+  
+  }
+  
+  @media only screen and (max-width: 550px) {
+  
+    #slider-container #slider .slide {
+      width: calc(10% - 20px);
+    }
+  
+  }
+
+
+/* ------ 第三區塊 ------ */
+
+.content-3{
+    padding-bottom: 50px;
+}
+
+
+
+.content-3 h1{
+    font-size :30px;
+    color:rgb(233, 124, 58);
+    font-weight: bold;
+    text-align: center;
+    padding-top:50px;
+    padding-bottom:30px;
+}
+
+.room{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr;
+    margin: 0 10vw 0;
+}
+
+.room1{
+    grid-column : 1 / 3;
+    grid-row : 1 / 2;
+    /* width: 485px; */
+    height: 226px;
+    /* background-image: linear-gradient(
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 0)
+      ),url('../images/room1.png'); */
+    background-image: url('../images/room1.png');
+    background-size: cover;
+    background-position:  center;
+    margin: 0 16.5px 33px 16.5px;
+    position:relative;
+    /* transition:background-image 10s; */
+}
+
+/* .room1:after{
+    content:'';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0 , .4);
+    opacity: 0;
+    transition-duration: 1s;
+    
+    
+} */
+
+/* .room1-text{
+    z-index:1;
+} */
+
+
+
+.room1-after{
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    background-image: linear-gradient(rgba(90, 90, 90, 0),
+    rgba(90, 90, 90, 0));
+}
+
+.room2-after{
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    background-image: linear-gradient(rgba(90, 90, 90, 0),
+    rgba(90, 90, 90, 0));
+}
+
+.room3-after{
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    background-image: linear-gradient(rgba(90, 90, 90, 0),
+    rgba(90, 90, 90, 0));
+}
+
+.room4-after{
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    background-image: linear-gradient(rgba(90, 90, 90, 0),
+    rgba(90, 90, 90, 0));
+}
+
+.room5-after{
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    background-image: linear-gradient(rgba(90, 90, 90, 0),
+    rgba(90, 90, 90, 0));
+}
+
+.room1 p{
+    color:white; 
+    position: absolute;
+    font-size: 20px;
+    left:30px;
+    bottom: 30px;   
+    opacity:0; 
+}
+
+.room1:hover .room1-after{
+    background-image: linear-gradient(rgba(35, 35, 35, 0),
+    rgba(35, 35, 35,1));
+}
+
+.room2:hover .room2-after{
+    background-image: linear-gradient(rgba(35, 35, 35, 0),
+    rgba(35, 35, 35,1));
+}
+
+.room3:hover .room3-after{
+    background-image: linear-gradient(rgba(35, 35, 35 ,0),
+    rgba(35, 35, 35,1));
+}
+
+.room4:hover .room4-after{
+    background-image: linear-gradient(rgba(35, 35, 35, 0),rgba(35, 35, 35, 1)
+    );
+}
+
+.room5:hover .room5-after{
+    background-image: linear-gradient(rgba(35, 35, 35, 0),
+    rgba(35, 35, 35,1));
+}
+
+.room1:hover p{
+    opacity:1; 
+}
+
+.room2 p{
+    color:white; 
+    /* display: none; */
+    position: absolute;
+    font-size: 20px;
+    left:30px;
+    bottom: 30px;
+    opacity:0; 
+}
+
+.room3 p{
+    color:white; 
+    /* display: none; */
+    position: absolute;
+    font-size: 20px;
+    left:30px;
+    bottom: 30px;
+    opacity:0; 
+}
+
+.room4 p{
+    color:white; 
+    /* display: none; */
+    position: absolute;
+    font-size: 20px;
+    left:30px;
+    bottom: 30px;
+    opacity:0; 
+}
+
+.room5 p{
+    color:white; 
+    /* display: none; */
+    position: absolute;
+    font-size: 20px;
+    left:30px;
+    bottom: 30px;
+    opacity:0; 
+}
+
+
+
+
+
+.room2{
+    grid-column : 3 / 4;
+    grid-row : 1 / 2;
+    /* width: 226px; */
+    height: 226px;
+    
+
+    background-image: url('../images/room2.jpg');
+    background-size: cover;
+    background-position:  center;
+    margin: 0 16.5px 33px 16.5px;
+    position:relative;
+}
+
+.room3{
+    grid-column : 4 / 5;
+    grid-row : 1 / 3;
+    width: 226px;
+    height: 485px;
+    background-image: url('../images/room3.png');
+    background-size: cover;
+    margin: 0 16.5px 33px 16.5px;
+    /* margin:0 0 0 33px; */
+    position:relative;
+}
+
+.room4{
+    grid-column : 1 / 2;
+    grid-row: 2 / 3 ;
+    /* width: 226px; */
+    height: 226px;
+    background-image: url('../images/room4.png');
+    background-size: cover;
+    margin-left: 16.5px;
+    margin-right: 16.5px;
+    position:relative;
+}
+
+.room5{
+    grid-column : 2 / 4;
+    grid-row: 2 / 3 ;
+    /* width: 485px; */
+    height: 226px;
+    background-image:url('../images/room5.png');
+    background-size: cover;
+    margin: 0 16.5px 33px 16.5px;
+    position:relative;
+}
+
+/* .room1:hover{
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.4),
+        rgba(0, 0, 0, 0.4)
+      ),url('../images/room1.png');
+} */
+
+/* .room2:hover{
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.4),
+        rgba(0, 0, 0, 0.4)
+      ),url('../images/room2.jpg');
+}
+
+.room3:hover{
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.4),
+        rgba(0, 0, 0, 0.4)
+      ),url('../images/room3.png');
+}
+
+.room4:hover{
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.4),
+        rgba(0, 0, 0, 0.4)
+      ),url('../images/room4.png');
+}
+
+.room5:hover{
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.4),
+        rgba(0, 0, 0, 0.4)
+      ),url('../images/room5.png');
+} */
+
+/* .room1:hover p{
+    display:block;
+} */
+
+.room2:hover p{
+    opacity:1; 
+}
+
+.room3:hover p{
+    opacity:1; 
+}
+
+.room4:hover p{
+    opacity:1; 
+}
+
+.room5:hover p{
+    opacity:1; 
+}
+
+/* ------ 第四區塊 ------ */
+
+.content-4{
+    background-color: rgb(255, 242, 227);
+    padding-bottom: 50px;
+}
+
+.content-4 h1{
+    font-size :30px;
+    color:rgb(233, 124, 58);
+    font-weight: bold;
+    text-align: center;
+    padding-top:50px;
+    padding-bottom:25px;
+}
+
+.content-4-content{
+    display: flex;
+    margin: 0 10vw 0;
+
+}
+
+.content-4 .photo{
+    background-image: url('../images/circle.png');
+    background-size: 289px 289px;
+    width: 289px;
+    height: 289px;
+    position: relative;
+    margin: 0 auto;
+    
+}
+
+.content-4-content img{
+    width: 262px;
+    display: block;
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    
+}
+
+.content-4-content p{
+    line-height: 1.3;
+    display: block;
+    padding: 10px 10% 0;
+    
+}
+
+.photo + p{
+    font-size: 25px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    position: relative;
+}
+
+.photo + p:after{
+    content:'';
+    display:block;
+    /* width: 270px; */
+    width: 110%;
+    height: 3px;
+    background-color:rgb(233, 124, 58);
+
+    position:absolute;
+    left: 30px;
+    top: 50px;
+    bottom: 0;
+    margin: auto;
+}
+
+/* ------ footer ------ */
+
+.footer{
+    padding-top: 50px;
+    padding-bottom: 150px;
+    background-color: rgb(60, 58, 57);;
+}
+
+.footer h1{
+    color:white;
+    text-align: center;
+    line-height: 1.3;
+}
+
+.footer p{
+    color:white;
+    text-align: center;
+    line-height: 1.3;
+}
+
+.icon{
+    text-align:center;
+    margin-top: 10px;
+}
+
+.fa-facebook{
+    color:white;
+    font-size: 1.2rem;
+    margin: 0 5px;
+}
+
+.fa-phone-flip{
+    color:white;
+    font-size: 1.2rem;
+    margin: 0 5px;
+}
+
+.fa-envelope{
+    color:white;
+    font-size: 1.2rem;
+    margin: 0 5px;
+}
+
+/* ------ page2 課程 ------ */
+
+.wrapper-page2{
+    width: 100vw;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(../images/page-2-background-image-2.png);
+    /* background-size: cover; */
+    background-size: 100% auto;
+    background-position: 0px 200px;
+    background-repeat: no-repeat;
+}
+
+
+/* 頁首 */
+.top-2{
+    height: 55px;
+    width: 100vw;
+    background-color: rgba(255, 255, 255);
+    border-bottom: 2px solid rgba(212, 149, 91);
+    /* position:absolute; */
+    /* border: 1px solid red; */
+    display:flex;
+}
+
+
+
+.top-2 img{
+    height: 50px;
+    margin-left: 10vw;
+    margin-top: 5px;
+}
+.top-2 ul{
+    display:flex;
+    width: 50%;
+    margin-left: auto;
+    margin-right:10vw ;
+    line-height: 55px;
+    /* margin-top: 15px; */
+    height: 55px;
+    position:relative;
+    
+    /* border: 2px solid red; */
+}
+
+.top-2 ul li{
+    flex-grow: 1;
+}
+
+.top-2 ol{
+    background-color:rgb(193, 115, 44);
+    position:absolute;
+    left:467.76px;
+    top:56px;
+    width: 170px;
+    display:none;
+}
+
+.top-2>ul>li:nth-child(4):hover ol{
+    display:block;
+} 
+
+
+/* 回到頁面頂端按鈕 */
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: rgb(193, 115, 44);
+    cursor: pointer;
+    padding: 15px 20px;
+    border-radius: 50%;
+    
+  }
+  
+.fa-arrow-up{
+    font-size: 20px;
+    color: white;
+}
+
+#myBtn:hover {
+    background-color: #555;
+}
+
+
+.top-2 ul a{
+    text-decoration: none;
+    color:black;
+    font-weight: bold;
+    font-size: 1rem;
+    display: block;
+    text-align:center;
+    text-align: left;
+    margin-left: 15px;
+}
+
+.top-2 ol a{
+    color:rgb(255, 227, 195);
+    line-height: 50px;
+
+}
+
+.top-2 ul a:hover{
+    color:rgb(235, 160, 92);
+}
+
+.top-2 ol a:hover{
+    color:rgb(255, 255, 255);
+}
+
+
+/* 麵包屑 */
+.page2-place{
+    margin:20px 10vw 20px ;
+    /* padding:10px 10vw 10px ; */
+    display: flex; 
+    /* background-color: rgb(174, 174, 174);  */
+}
+
+.page2-place a{
+    text-decoration: none;
+    color:black;
+}
+
+.page2-place a:first-child{   
+    margin-right: 10px;
+}
+
+.page2-place p{
+    margin-right: 10px;
+}
+
+
+/* 課程內容 */
+
+.guitar{
+    margin:0 10vw 20px ;
+    width: 850px;
+    border:2px solid rgb(233, 124, 58);
+    display:flex;
+    padding:40px;
+    background-color: white;
+}
+
+.sing-2 ,.keyboard-2,.write-2{
+    width: 100%;
+} 
+
+.page2-content h1{
+    font-size: 30px;
+    font-weight: bold;
+    color:rgb(223, 124, 58);
+}
+
+.page2-content p{
+    font-size: 20px;
+    line-height: 1.3;
+    margin-top: 35px;
+    
+}
+
+/* 按鈕 */
+.page2-content a{
+    display :block;
+    width: 130px;
+    height: 40px;
+    border: 2px solid rgb(233, 124, 58); 
+    text-decoration: none;
+    font-size: 20px;
+    color:black;
+    text-align: center;
+    line-height: 2;
+    margin-left: auto;
+    margin-top: 30px;
+}
+
+/* 按鈕動態 */
+.page2-content a:hover{
+    background-color: rgb(233, 124, 58);
+    color:white;
+}
+
+.page2-content img{
+    width: 200px;
+    height: 0%;
+    margin-right: 40px;
+}
+
+.drum{
+    margin:0 10vw 20px 10vw;
+    width: 850px;
+    border:2px solid rgb(233, 124, 58);
+    display:flex;
+    padding:40px;
+    float:right;
+    background-color: white;
+}
+
+.sing{
+    margin:0 10vw 20px ;
+    width: 850px;
+    border:2px solid rgb(233, 124, 58);
+    display:flex;
+    padding:40px;
+    background-color: white;
+}
+
+.keyboard{
+    margin:0 10vw 20px ;
+    width: 850px;
+    border:2px solid rgb(233, 124, 58);
+    display:flex;
+    padding:40px;
+    float:right;
+    background-color: white;
+}
+
+.write{
+    margin:0 10vw 50px ;
+    width: 850px;
+    border:2px solid rgb(233, 124, 58);
+    display:flex;
+    padding:40px;
+    background-color: white;
+    margin-bottom: 50px;
+}
+
+.footer-2{
+    padding-top: 50px;
+    padding-bottom: 150px;
+    background-color: rgb(193, 115, 44);;
+}
+
+.footer-2 h1{
+    color:white;
+    text-align: center;
+    line-height: 1.3;
+}
+
+.footer-2 p{
+    color:white;
+    text-align: center;
+    line-height: 1.3;
+}
+
+
+/* ------ 吉他課程 ------ */
+
+.page2-1-content h2{
+    font-size: 25px;
+    color:rgb(223, 124, 58);
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+.page2-1-content h3{
+    font-size: 25px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.wrapper-page2-1{
+    width: 1263.33px;
+    font-family: Arial, Helvetica, sans-serif;
+    /* background-image: url(../images/page-2-background-image-2.png); */
+    /* background-size: cover; */
+    background-size: 100% auto;
+    background-position: 0px 200px;
+    background-repeat: no-repeat;
+}
+
+.course-information{
+    display: flex;
+}
+
+.three{
+    display: flex;
+    width: 100% ;
+    margin-bottom: 30px;
+}
+
+.three-1 p{
+    /* display: block; */
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+.three-2 p{
+    /* display: block; */
+    position: absolute;
+    left:18%;
+    top:50%;
+    transform: translate(0%,-50%);
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+.three-3 p{
+    /* display: block; */
+    position: absolute;
+    left: 13%;
+    top:50%;
+    transform: translate(0%,-50%);
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+.three-1 ,.three-2 ,.three-3{
+    height: 100px;
+}
+
+.three-1 {
+    width: 33.3%;
+    background-image: url('../images/step1.png');
+    background-size: 100% 100%;
+    /* height: 50px; */
+    position: relative;
+}
+
+.three-2{
+    width: 33.3%;
+    background-image: url('../images/step2.png');
+    background-size: 100% 100%;
+    /* height: 50px; */
+    position: relative;
+}
+
+.three-3{
+    width: 33.3%;
+    background-image: url('../images/step3.png');
+    background-size: 100% 100%;
+    /* height: 50px; */
+    position: relative;
+}
+
+.three-3 p{
+    color:white;
+}
+
+/* span{
+    animation:blinker 1s linear infinite;
+}
+
+@keyframes blinker{
+    50%{
+        opacity:0;
+    }
+} */
+
+.course-information-1 ,.course-information-2{
+    /* background-image: url('../images/course-background.png'); */
+    /* background-size: 100% 100%; */
+    background-color:rgb(252, 242, 227);
+    /* margin: 0 10px; */
+    width: 50%;
+    padding-bottom: 15px;
+}
+
+.course-information-1{
+    margin-right: 10px;
+}
+
+.course-information-2{
+    margin-left: 10px;
+}
+
+.course-information .course-information-1 h1{
+    color:white;
+    text-align: center;
+    font-size: 25px;
+    padding: 0;
+}
+
+.course-information .course-information-2 h1{
+    color:white;
+    text-align: center;
+    font-size: 28px;
+    padding: 0;
+}
+
+.course-top1 , .course-top2{
+    background-image: url('../images/course-background-1.png');
+    background-size: 100% 100%;
+    padding: 15px 0 35px 0;
+    margin-bottom: 10px;
+}
+
+.course-top1 ul{
+    text-align: center;
+}
+
+.course-top2 ul{
+    text-align: center;
+}
+
+.fa-user {
+    color:white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+.fa-users {
+    color:white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 32px;
+}
+
+.course-information-1-1{
+    display:flex;
+    padding: 0 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.course-information-1>p{
+    line-height: 1.5;
+    font-size: 20px;
+    position: relative;
+    margin-left: 50px;
+}
+
+.course-information-2>p{
+    line-height: 1.5;
+    font-size: 20px;
+    position: relative;
+    margin-left: 50px;
+}
+
+.course-information-1>p:before{
+    content:'';
+    display: block;
+    width:8px;
+    height: 8px;
+    background-color: rgb(193, 115, 44);
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    left: -15px;
+}
+
+.course-information-2>p:before{
+    content:'';
+    display: block;
+    width:8px;
+    height: 8px;
+    background-color: rgb(193, 115, 44);
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    left: -15px;
+}
+
+
+.course-information-1 .course-information-1-1 p{
+    font-size: 25px;
+    position: relative;
+    margin-top: 10px;
+}
+
+.course-information-2 .course-information-1-1 p{
+    font-size: 25px;
+    position: relative;
+    margin-top: 10px;
+}
+
+.course-information-1-1 p:first-child:before{
+    content:'';
+    display: block;
+    width: 400px;
+    height: 2px;
+    background-color: rgb(193, 115, 44);
+    position: absolute;
+    left: 0;
+    top: -15px;
+}
+
+.course-information-1-1 p:first-child:after{
+    content:'';
+    display: block;
+    width: 8px;
+    height: 8px;
+    background-color: rgb(193, 115, 44);
+    transform: rotate(45deg);
+    position: absolute;
+    right: -13px;
+    top: 6px;
+}
+
+.course-information-1-1 p:nth-child(2){
+    margin-left: 20px;
+}
+
+.course-information-1-1 p:nth-child(2):after{
+    content:'';
+    display: block;
+    width: 8px;
+    height: 8px;
+    background-color: rgb(193, 115, 44);
+    transform: rotate(45deg);
+    position: absolute;
+    right: -13px;
+    top: 6px;
+}
+
+.course-information-1-1 p:nth-child(3){
+    margin-left: 20px;
+}
+
+.course-banner{
+    width: 100%;
+    padding-bottom: 25.54%;
+    margin: 30px 0 30px 0;
+    background-image: url('../images/course-banner.png');
+    background-size: 100% 100%;
+    position: relative;
+}
+
+.course-banner p{
+    font-size: 50px;
+    display: block;
+    color:white;
+    font-weight: bold;
+
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    /* overflow: hidden; */
+    /* text-align: center; */
+}
+
+.page2-1-content{
+    margin:0 10vw ;
+}
+
+.page2-1-content h1{
+    font-size :30px;
+    color:rgb(233, 124, 58);
+    font-weight: bold;
+    text-align: center;
+    padding-top:50px;
+    padding-bottom:25px;
+}
+
+/* .page2-1-content h2{
+    text-align: center;
+    font-weight: bold;
+    font-size: 22px;
+    margin-bottom: 15px;
+} */
+.information h3{
+    font-weight: bold;
+    font-size: 22px;
+    /* flex-grow:1; */
+}
+
+.fa-guitar{
+    font-size: 25px;
+    color:rgb(223, 124, 58);
+    margin-right: 10px;
+    margin-left: 10px;
+    
+}
+
+.information{
+    
+    display: flex;
+    margin-left: 190px;
+    /* justify-content: space-between; */
+}
+
+.question1, .question2{
+    margin-top: 10px;
+    border: 1px solid rgb(193, 115, 44);
+    margin-bottom: 20px;
+    cursor: pointer;
+    
+}
+
+.ask1 , .ask2{
+    background-color:rgb(255, 249, 242);
+    /* padding:20px; */
+    display: flex;
+    position: relative;
+}
+
+.fa-chevron-down{
+    /* text-align: right; */
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translate(0%,-50%);
+    color:rgb(193, 115, 44);
+    font-size: 30px;
+    /* transition: transform .5s ease-in; */
+}
+
+.question1 p{
+    font-size: 20px;
+    line-height: 1.3;
+    margin-top: 20px;
+}
+
+.question1.active .answer1{
+    /* display: block; */
+    /* display: flex; */
+    max-height: 150px;
+} 
+
+.question1.active .fa-chevron-down{
+    transform:rotate(180deg);
+    transform-origin: center 9px;
+}
+
+.question2.active .fa-chevron-down{
+    transform:rotate(180deg);
+    transform-origin: center 9px;
+}
+
+.question2.active .answer2{
+    /* display: block; */
+    /* display: flex; */
+    max-height: 150px;
+} 
+
+.question2 p{
+    font-size: 20px;
+    line-height: 1.3;
+    margin-top: 20px;
+}
+
+.ask1 p:first-child{
+    font-size: 35px;  
+    color:rgb(193, 115, 44);
+    font-weight: bold;
+    /* margin-right: 10px; */
+    margin: 20px 10px 20px 20px ;
+    /* line-height: 1; */
+}
+
+.ask1 p:last-child{
+    margin-top: 20px;
+}
+
+.answer1 p:last-child{
+    margin-top: 20px;
+}
+
+.ask2 p:first-child{
+    font-size: 35px;  
+    color:rgb(193, 115, 44);
+    font-weight: bold;
+    margin: 20px 10px 20px 20px ;
+    
+}
+
+
+.answer1 , .answer2{
+    /* padding:20px; */
+    display: flex;
+    transition:max-height 1.3s ease;
+    /* display:none; */
+}
+
+.answer1 , .answer2{
+    /* display:block; */
+    max-height: 0;
+    overflow: hidden; 
+}
+
+
+.answer1 p{
+    font-size: 20px;
+}
+
+.answer1 p:first-child{
+    font-size: 35px;  
+    color:rgb(193, 115, 44);
+    font-weight: bold;
+    
+    margin: 20px 10px 20px 20px ;
+}
+
+.answer2 p:first-child{
+    font-size: 35px;  
+    color:rgb(193, 115, 44);
+    font-weight: bold;
+    margin: 20px 10px 20px 20px ;
+}
+
+.question2{
+    border: 1px solid rgb(193, 115, 44);
+}
+
+.teacher{
+    margin-bottom: 50px;
+}
+
+.teacher-information{
+    display: flex;
+    justify-content: space-between;
+}
+
+.teacher-information img{
+    width: 262px;
+    display: block;
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+}
+
+.teacher-information .photo-page2{
+    background-image: url('../images/circle.png');
+    background-size: 289px 289px;
+    width: 289px;
+    height: 289px;
+    position: relative;
+    margin: 0 auto;
+    
+}
+
+
+.photo-page2 + p{
+    font-size: 25px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    position: relative;
+}
+
+/* 橫線 */
+.photo-page2 + p:after{
+    content:'';
+    display:block;
+    /* width: 270px; */
+    width: 80%;
+    height: 3px;
+    background-color:rgb(233, 124, 58);
+
+    position:absolute;
+    left: 30px;
+    top: 50px;
+    bottom: 0;
+    margin: auto;
+}
+
+.teacher-information p{
+    line-height: 1.3;
+    display: block;
+    padding: 10px 10% 0;
+    
+}
+
+/* 吉他課程的按鈕 */
+.page2-1-content a{
+    display :block;
+    width: 130px;
+    height: 40px;
+    border: 2px solid rgb(233, 124, 58); 
+    text-decoration: none;
+    font-size: 20px;
+    color:black;
+    text-align: center;
+    line-height: 2;
+    margin: 30px auto 60px ;
+}
+
+.page2-1-content a:hover{
+    background-color: rgb(233, 124, 58);
+    color:white;
+}
+
+/* ------ 聯絡我們 ------ */
+
+.wrapper-contact{
+    width: 1263.33px;
+    font-family: Arial, Helvetica, sans-serif;
+    /* background-image: url(../images/page-2-background-image-2.png); */
+    /* background-size: cover; */
+    /* background-size: 100% auto;
+    background-position: 0px 200px;
+    background-repeat: no-repeat; */
+    
+}
+
+.contact-content{
+    background-color: rgb(255, 242, 227);
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+.contact-content h1{
+    font-size :30px;
+    position:relative;
+    color:rgb(233, 124, 58);
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+
+}
+
+.contact-content-1{
+    width: 500px;
+    margin: 0 auto 0;
+}
+
+.row1{
+    display:flex;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.row2{
+    margin-bottom: 10px;
+}
+
+.row3{
+    margin-bottom: 10px;
+}
+
+.course-box{
+    display: flex;
+}
+
+.name{
+    width: 50%;
+}
+
+.phone{
+    width: 50%;
+    margin-left: 2.5%;
+}
+
+.name-text{
+    width: 95%;
+    height: 20px;
+    border:1px solid rgb(193, 115, 44);
+}
+
+.phone-text{
+    width: 100%;
+    height: 20px;
+    border:1px solid rgb(193, 115, 44);
+}
+
+.e-mail-text{
+    width: 100%;
+    height: 20px;
+    border:1px solid rgb(193, 115, 44);
+}
+
+.row4 textarea{
+    width: 100%;
+    border:1px solid rgb(193, 115, 44);
+}
+
+.contact-content-1 p{
+    color:rgb(193, 115, 44);
+    font-weight: bold;
+    margin: 3px 0;
+    font-size: 1rem;
+}
+
+.course-box p{
+    color:black;
+    font-weight: normal;
+}
+
+.contact-content-1 a{
+    display :block;
+    width: 130px;
+    height: 40px;
+    border: 2px solid rgb(233, 124, 58); 
+    text-decoration: none;
+    font-size: 20px;
+    color:black;
+    text-align: center;
+    line-height: 2;
+    margin: 20px auto 0;
+}
+
+.contact-content-1 a:hover{
+    background-color: rgb(233, 124, 58);
+    color:white;
+}
+
+.footer-2{
+    font-family: sans-serif;
+}

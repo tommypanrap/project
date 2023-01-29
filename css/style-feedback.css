@@ -1,0 +1,481 @@
+@import url('reset.css');
+
+
+.body{
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-size: 21px;
+    position:relative;
+}
+
+/* 頁首 */
+.top-2{
+    height: 55px;
+    width: 100%;
+    background-color: rgba(255, 255, 255);
+    border-bottom: 2px solid rgba(212, 149, 91);
+    /* position:absolute; */
+    /* border: 1px solid red; */
+    display:flex;
+}
+
+
+
+.top-2 img{
+    height: 50px;
+    margin-left: 10vw;
+    margin-top: 5px;
+}
+.top-2 ul{
+    display:flex;
+    width: 50%;
+    margin-left: auto;
+    margin-right:10vw ;
+    line-height: 55px;
+    /* margin-top: 15px; */
+    height: 55px;
+    position:relative;
+    
+    /* border: 2px solid red; */
+}
+
+.top-2 ul li{
+    flex-grow: 1;
+}
+
+.top-2 ol{
+    background-color:rgb(193, 115, 44);
+    position:absolute;
+    left:467.76px;
+    top:56px;
+    width: 170px;
+    display:none;
+}
+
+.top-2>ul>li:nth-child(4):hover ol{
+    display:block;
+} 
+
+
+
+.top-2 ul a{
+    text-decoration: none;
+    color:black;
+    font-weight: bold;
+    font-size: 1rem;
+    display: block;
+    text-align:center;
+    text-align: left;
+    margin-left: 15px;
+}
+
+.top-2 ol a{
+    color:rgb(255, 227, 195);
+    line-height: 50px;
+
+}
+
+.top-2 ul a:hover{
+    color:rgb(235, 160, 92);
+}
+
+.top-2 ol a:hover{
+    color:rgb(255, 255, 255);
+}
+
+
+/* 學生評論 */
+
+.feedback{
+    width: 33.3%;
+    margin-bottom: 50px;
+}
+
+
+
+
+
+
+/* 按鈕 */
+.content-text a{
+    display :block;
+    width: 130px;
+    height: 40px;
+    border: 2px solid rgb(233, 124, 58); 
+    text-decoration: none;
+    font-size: 20px;
+    color:black;
+    text-align: center;
+    line-height: 2;
+    margin-left: auto;
+    margin-top: 66px;
+}
+
+.content-text a:hover{
+    background-color: rgb(233, 124, 58);
+    color:white;
+}
+
+
+
+
+
+.content-4{
+    /* background-color: rgb(255, 242, 227); */
+    padding-bottom: 50px;
+}
+
+/* 標題 */
+
+.content-4 h1{
+    font-size :30px;
+    color:rgb(233, 124, 58);
+    font-weight: bold;
+    text-align: center;
+    /* padding-top:50px;
+    padding-bottom:25px; */
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+.content-4-content{
+    display: flex;
+    flex-wrap:wrap;
+    margin: 0 10vw 0;
+   
+
+}
+
+.content-4 .photo{
+    background-image: url('../images/circle.png');
+    background-size: 289px 289px;
+    width: 289px;
+    height: 289px;
+    position: relative;
+    margin: 0 auto;
+    
+}
+
+.content-4-content img{
+    width: 262px;
+    display: block;
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    
+}
+
+.content-4-content p{
+    line-height: 1.3;
+    display: block;
+    padding: 10px 10% 0;
+    
+}
+
+.photo + p{
+    font-size: 25px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    position: relative;
+}
+
+.photo + p:after{
+    content:'';
+    display:block;
+    /* width: 270px; */
+    width: 110%;
+    height: 3px;
+    background-color:rgb(233, 124, 58);
+
+    position:absolute;
+    left: 30px;
+    top: 50px;
+    bottom: 0;
+    margin: auto;
+}
+
+
+
+
+.wrapper-page2{
+    width:100vw;
+    font-family: Arial, Helvetica, sans-serif;
+    /* background-image: url(../images/page-2-background-image-2.png); */
+    /* background-size: cover; */
+    /* background-size: 100% auto; */
+    /* background-position: 0px 200px; */
+    /* background-repeat: no-repeat; */
+}
+
+
+
+
+/* 麵包屑 */
+.page2-place{
+    margin:20px 10vw 20px ;
+    display: flex;  
+}
+
+.page2-place a{
+    text-decoration: none;
+    margin-right: 10px;
+    color:black;
+}
+
+.page2-place p{
+    margin-right: 10px;
+}
+
+
+/* 課程內容 */
+
+.guitar{
+    margin:0 10vw 20px ;
+    width: 850px;
+    border:2px solid rgb(233, 124, 58);
+    display:flex;
+    padding:40px;
+    background-color: white;
+}
+
+.sing-2 ,.keyboard-2,.write-2{
+    width: 100%;
+} 
+
+.page2-content h1{
+    font-size: 30px;
+    font-weight: bold;
+    color:rgb(223, 124, 58);
+}
+
+.page2-content p{
+    font-size: 20px;
+    line-height: 1.3;
+    margin-top: 35px;
+    
+}
+
+/* 按鈕 */
+.page2-content a{
+    display :block;
+    width: 130px;
+    height: 40px;
+    border: 2px solid rgb(233, 124, 58); 
+    text-decoration: none;
+    font-size: 20px;
+    color:black;
+    text-align: center;
+    line-height: 2;
+    margin-left: auto;
+    margin-top: 30px;
+}
+
+/* 按鈕動態 */
+.page2-content a:hover{
+    background-color: rgb(233, 124, 58);
+    color:white;
+}
+
+.page2-content img{
+    width: 200px;
+    height: 0%;
+    margin-right: 40px;
+}
+
+.drum{
+    margin:0 10vw 20px 10vw;
+    width: 850px;
+    border:2px solid rgb(233, 124, 58);
+    display:flex;
+    padding:40px;
+    float:right;
+    background-color: white;
+}
+
+.sing{
+    margin:0 10vw 20px ;
+    width: 850px;
+    border:2px solid rgb(233, 124, 58);
+    display:flex;
+    padding:40px;
+    background-color: white;
+}
+
+.keyboard{
+    margin:0 10vw 20px ;
+    width: 850px;
+    border:2px solid rgb(233, 124, 58);
+    display:flex;
+    padding:40px;
+    float:right;
+    background-color: white;
+}
+
+.write{
+    margin:0 10vw 50px ;
+    width: 850px;
+    border:2px solid rgb(233, 124, 58);
+    display:flex;
+    padding:40px;
+    background-color: white;
+    margin-bottom: 50px;
+}
+
+.footer-2{
+    padding-top: 50px;
+    padding-bottom: 150px;
+    background-color: rgb(193, 115, 44);;
+}
+
+.footer-2 h1{
+    color:white;
+    text-align: center;
+    line-height: 1.3;
+}
+
+.footer-2 p{
+    color:white;
+    text-align: center;
+    line-height: 1.3;
+}
+
+.icon{
+    text-align:center;
+    margin-top: 10px;
+}
+
+.fa-facebook{
+    color:white;
+    font-size: 1.2rem;
+    margin: 0 5px;
+}
+
+.fa-phone-flip{
+    color:white;
+    font-size: 1.2rem;
+    margin: 0 5px;
+}
+
+.fa-envelope{
+    color:white;
+    font-size: 1.2rem;
+    margin: 0 5px;
+}
+
+/* ------ 聯絡我們 ------ */
+
+.wrapper-contact{
+    width: 100vw;
+    font-family: Arial, Helvetica, sans-serif;
+    /* background-image: url(../images/page-2-background-image-2.png); */
+    /* background-size: cover; */
+    /* background-size: 100% auto;
+    background-position: 0px 200px;
+    background-repeat: no-repeat; */
+    
+}
+
+.contact-content{
+    background-color: rgb(255, 242, 227);
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+.contact-content h1{
+    font-size :30px;
+    position:relative;
+    color:rgb(233, 124, 58);
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+
+}
+
+.contact-content-1{
+    width: 500px;
+    margin: 0 auto 0;
+}
+
+.row1{
+    display:flex;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.row2{
+    margin-bottom: 10px;
+}
+
+.row3{
+    margin-bottom: 10px;
+}
+
+.course-box{
+    display: flex;
+}
+
+.name{
+    width: 50%;
+}
+
+.phone{
+    width: 50%;
+    margin-left: 2.5%;
+}
+
+.name-text{
+    width: 95%;
+    height: 20px;
+    border:1px solid rgb(193, 115, 44);
+}
+
+.phone-text{
+    width: 100%;
+    height: 20px;
+    border:1px solid rgb(193, 115, 44);
+}
+
+.e-mail-text{
+    width: 100%;
+    height: 20px;
+    border:1px solid rgb(193, 115, 44);
+}
+
+.row4 textarea{
+    width: 100%;
+    border:1px solid rgb(193, 115, 44);
+}
+
+.contact-content-1 p{
+    color:rgb(193, 115, 44);
+    font-weight: bold;
+    margin: 3px 0;
+    font-size: 1rem;
+}
+
+.course-box p{
+    color:black;
+    font-weight: normal;
+}
+
+.contact-content-1 a{
+    display :block;
+    width: 130px;
+    height: 40px;
+    border: 2px solid rgb(233, 124, 58); 
+    text-decoration: none;
+    font-size: 20px;
+    color:black;
+    text-align: center;
+    line-height: 2;
+    margin: 20px auto 0;
+}
+
+.contact-content-1 a:hover{
+    background-color: rgb(233, 124, 58);
+    color:white;
+}
+
+.footer-2{
+    font-family: sans-serif;
+}
