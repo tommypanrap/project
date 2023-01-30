@@ -33,7 +33,7 @@
     line-height: 55px;
     /* margin-top: 15px; */
     height: 55px;
-    position:relative;
+    /* position:relative; */
     
     /* border: 2px solid red; */
 }
@@ -45,8 +45,8 @@
 .top-2 ol{
     background-color:rgb(193, 115, 44);
     position:absolute;
-    left:467.76px;
-    top:56px;
+    /* left:467.76px;
+    top:56px; */
     width: 170px;
     display:none;
 }
@@ -188,7 +188,7 @@
     background-color:rgb(233, 124, 58);
 
     position:absolute;
-    left: 30px;
+    /* left: 30px; */
     top: 50px;
     bottom: 0;
     margin: auto;

@@ -32,7 +32,7 @@
     line-height: 55px;
     /* margin-top: 15px; */
     height: 55px;
-    position:relative;
+    /* position:relative; */
     
     /* border: 2px solid red; */
 }
@@ -44,8 +44,8 @@
 .top-2 ol{
     background-color:rgb(193, 115, 44);
     position:absolute;
-    left:467.76px;
-    top:56px;
+    /* left:467.76px;
+    top:56px; */
     width: 170px;
     display:none;
 }
@@ -289,7 +289,8 @@
 .footer-2{
     padding-top: 50px;
     padding-bottom: 150px;
-    background-color: rgb(193, 115, 44);;
+    background-color: rgb(193, 115, 44);
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .footer-2 h1{
@@ -326,6 +327,68 @@
     font-size: 1.2rem;
     margin: 0 5px;
 }
+
+.brand-2{
+    display:flex;
+    margin:0 10vw;
+    margin-bottom: 50px;
+    margin-top: 90px;
+}
+
+.brand-2-left{
+    
+}
+
+.brand-2-right{
+    margin-left: 100px;
+    
+    
+}
+
+
+
+.brand-2-right p{
+    line-height: 2;
+    
+    
+}
+
+.brand-2-right-1 p:last-child:after{
+    content:'';
+    display:block;
+    
+    width: 130%;
+    height: 3px;
+    background-color:rgb(233, 124, 58);
+
+    
+    /* top: 125px; */
+    
+    margin: auto;
+    margin-top: 30px;
+}
+
+.brand-2-right-2{
+    margin-top: 45px;
+}
+
+
+
+.brand-2-right h1{
+    font-size: 25px;
+    text-align: left;
+    margin: 20px 0;
+}
+
+
+.brand-2-left iframe{
+    width: 450px ;
+    height: 450px ;
+    
+}
+
+
+
 
 /* ------ 聯絡我們 ------ */
 
@@ -393,3 +456,4 @@
     background-color: rgb(233, 124, 58);
     color:white;
 } */
+
