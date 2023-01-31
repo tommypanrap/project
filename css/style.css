@@ -1032,7 +1032,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 /* 課程內容 */
 
 .guitar{
-    margin:0 10vw 20px ;
+    margin:85px 10vw 20px ;
     width: 850px;
     border:2px solid rgb(233, 124, 58);
     display:flex;
@@ -1151,7 +1151,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     display:flex;
     padding:40px;
     background-color: white;
-    margin-bottom: 50px;
+    margin-bottom: 150px;
     position: relative;
 }
 
