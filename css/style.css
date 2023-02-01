@@ -8,6 +8,7 @@
 }
 
 .wrapper{
+    width: 100%;
     min-width: 1200px;
     font-family: sans-serif;
     /* font-family: 'Noto Sans TC', sans-serif; */
@@ -20,13 +21,26 @@
 
 .swiper-wrapper{
     /* background-size: cover; */
-    width: 100%;
+    /* width: 100%; */
     /* padding-bottom: 51.9%; */
 }
 
 .swiper img{
+    /* width: 1920px; */
     /* width: 100%; */
     /* height: 100%; */
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 
