@@ -11,6 +11,7 @@
 .top-2{
     height: 55px;
     width: 100%;
+    min-width: 1200px;
     background-color: rgba(255, 255, 255);
     border-bottom: 2px solid rgba(212, 149, 91);
     /* position:absolute; */
@@ -29,7 +30,7 @@
     display:flex;
     width: 50%;
     margin-left: auto;
-    margin-right:10vw ;
+    margin-right:10.41% ;
     line-height: 55px;
     /* margin-top: 15px; */
     height: 55px;
@@ -198,7 +199,8 @@
 
 
 .wrapper-page2{
-    width:100vw;
+    width:100%;
+    min-width: 1200px;
     font-family: Arial, Helvetica, sans-serif;
     /* background-image: url(../images/page-2-background-image-2.png); */
     /* background-size: cover; */
@@ -212,7 +214,7 @@
 
 /* 麵包屑 */
 .page2-place{
-    margin:20px 10vw 20px ;
+    margin:20px 10.41% 20px ;
     display: flex;  
 }
 
@@ -230,7 +232,7 @@
 /* 課程內容 */
 
 .guitar{
-    margin:0 10vw 20px ;
+    margin:0 10.41% 20px ;
     width: 850px;
     border:2px solid rgb(233, 124, 58);
     display:flex;
@@ -283,7 +285,7 @@
 }
 
 .drum{
-    margin:0 10vw 20px 10vw;
+    margin:0 10.41% 20px 10.41%;
     width: 850px;
     border:2px solid rgb(233, 124, 58);
     display:flex;
