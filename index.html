@@ -7,7 +7,7 @@
     <title>持續音樂</title>
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
@@ -23,37 +23,48 @@
     <div class="wrapper">
         <div class="top">
             <a href="index.html"><img src="images/logo.png" alt=""></a>
+            <i class="fa-solid fa-bars"></i>
             <ul>
                 
                 <li><a href="course.html">課程</a></li>
                 <li><a href="feedback.html">學生好評</a></li>
                 <li><a href="contact.html">聯絡我們</a></li>
-                <li><a href="">關於我們</a>
+                <li style="position:relative;"><a href="">關於我們</a>
                     <ol>
                         <li><a href="brand.html">品牌故事</a></li>   
                         <li><a href="classroom.html">教室環境</a></li>
                     </ol>
                 </li>
+                
             </ul>
         </div> 
 
         <!-- Slider main container -->
         <div class="swiper">
-            <!-- Additional required wrapper -->
+            
             <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide"><img src="images/1.png" alt=""></div>
-            <div class="swiper-slide"><img src="images/banner2.png" alt=""></div>
-            <!-- <div class="swiper-slide">Slide 3</div> -->
+            
+            <div class="swiper-slide">
+                <picture>
+                    <source srcset="images/rwd_banner1.jpg" media="(max-width: 414px)">
+                <img src="images/1.png" alt="">
+                </picture>
+            </div>
+            <div class="swiper-slide">
+                <picture>
+                    <source srcset="images/rwd_banner2.jpg" media="(max-width: 414px)">
+                <img src="images/banner2.png" alt="">
+                </picture>
+            </div>
+           
             
             </div>
-            <!-- If we need pagination -->
+            
             <div class="swiper-pagination"></div>
-            <!-- If we need navigation buttons -->
+           
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
-            <!-- If we need scrollbar -->
-            <!-- <div class="swiper-scrollbar"></div> -->
+        
 
 
             
@@ -95,48 +106,54 @@
             </div>
         </div> -->
 
-        <div id="container">
-            <h1>課程介紹</h1>
-            <div id="slider-container">
-              <span onclick="slideRight()" class="btn"></span>
-                <div id="slider">
-                    <div class="slide">
-                        <a href="course-guitar.html"><img src="images/2-course-1.png" alt=""></a>
-                        <h2>吉他</h2>
-                        <p>無論是沒有基礎，或者已經會刷和弦的人，我們這邊的老師都可以依照學生的程度做課程規劃。</p>
-                        
-                    </div>
-                    <div class="slide">
-                        <img src="images/2-course-2.png" alt="">
-                        <h2>爵士鼓</h2>
-                        <p>認識節奏、培養律動，理解打擊的肌肉控制，讓學生能演奏喜歡的歌曲。</p>
-                    </div>
-                    <div class="slide">
-                        <img src="images/2-course-3.png" alt="">
-                        <h2>歌唱</h2>
-                        <p>從共鳴位置、律動、咬字著手，為學生客製化課程。</p>
-                    </div>
-                    <div class="slide">
-                        <img src="images/2-course-4.png" alt="">
-                        <h2>KEYBOARD</h2>
-                        <p>認識和弦，讓你不再只會看譜彈琴。</p>
-                    </div>
-                    <div class="slide">
-                        <img src="images/2-course-5.png" alt="">
-                        <h2>創作</h2>
-                        <p>創作</p>
-                    </div>
-                  
-                  <!-- <div class="slide"><span>6</span></div>
-                  <div class="slide"><span>7</span></div>
-                  <div class="slide"><span>8</span></div>
-                  <div class="slide"><span>9</span></div>
-                  <div class="slide"><span>10</span></div> -->
+        <div class="content-2">
+        <div class="swiper mySwiper">
+            <h1>課程內容</h1>
+            <div class="swiper-wrapper">
+            
+              <div class="swiper-slide swiper-slide-2">
+                <div class="swiper-slide-2-1">
+                <img src="./images/2-course-1.png" alt="">
+                <h2>吉他</h2>
+                <p>無論是沒有基礎，或者已經會刷和弦的人，我們這邊的老師都可以依照學生的程度做課程規劃。</p>
+                </div>
               </div>
-              <span onclick="slideLeft()" class="btn"></span>
-            </div>
-          </div>
+              <div class="swiper-slide swiper-slide-2">
+                <div class="swiper-slide-2-1">
+                <img src="./images/2-course-2.png" alt=""><h2>爵士鼓</h2>
+                <p>鼓為樂曲中不可或缺的腳色。<br>
+                    認識節奏、培養律動，理解打擊的肌肉控制，讓學生能演奏喜歡的歌曲。 </p>
+                </div>
+                
+              </div>
+              <div class="swiper-slide swiper-slide-2">
+                <div class="swiper-slide-2-1">
+                <img src="./images/2-course-3.png" alt=""><h2>歌唱</h2>
+                <p>從共鳴位置、律動、咬字著手，為學生客製化課程。</p>
+                </div>
+              </div>
+              <div class="swiper-slide swiper-slide-2">
+                <div class="swiper-slide-2-1">
+                <img src="./images/2-course-4.png" alt=""><h2>KEYBOARD</h2>
+                <p>認識和弦，讓你不再只會看譜彈琴。</p>
+                </div>
+              </div>
+
+              <div class="swiper-slide swiper-slide-2">
+                <div class="swiper-slide-2-1">
+                <img src="./images/2-course-5.png" alt=""><h2>創作</h2>
+                
+                <p>創作</p>
+                </div>
+              </div>
+            
         
+            </div>
+            <div class="swiper-button-next swiper-button-next-2"></div>
+            <div class="swiper-button-prev swiper-button-prev-2"></div>
+            <div class="swiper-pagination swiper-pagination-2"></div>
+          </div>
+        </div>
 
         <!-- <div class="content-2">
             <h1>課程介紹</h1>
@@ -221,7 +238,7 @@
         </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script>
         const swiper = new Swiper('.swiper', {
   // Optional parameters
@@ -246,8 +263,27 @@
 });
     </script>
 
+
+
 <script>
-    var container = document.getElementById('container')
+    var swiper2 = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    //   slidesPerView: 'auto',
+    //   loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+
+<script>
+var container = document.getElementById('container')
 var slider = document.getElementById('slider');
 var slides = document.getElementsByClassName('slide').length;
 var buttons = document.getElementsByClassName('btn');
