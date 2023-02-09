@@ -43,6 +43,10 @@
     flex-grow: 1;
 }
 
+.top-2 ul>li:nth-child(2) > a{
+    color:rgb(235, 160, 92);
+}
+
 .top-2 ol{
     background-color:rgb(193, 115, 44);
     position:absolute;
