@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>學生好評</title>
+    <link rel="stylesheet" href="css/style-mall-2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+</head>
+<body>
+    <div class="wrapper-page2">
+        <div class="top-2">
+            <a href="index.html"><img src="images/logo-2.png" alt=""></a>
+            <ul>
+                
+                <li><a href="course2.html">課程</a></li>
+                <li><a href="feedback.html">學生好評</a></li>
+                <li><a href="contact.html">聯絡我們</a></li>
+                <li><a href="">關於我們</a>
+                    <ol>
+                        <li><a href="brand.html">品牌故事</a></li>   
+                        <li><a href="classroom.html">教室環境</a></li>
+                    </ol>
+                </li>
+                <li><a href="mall.html">購物商城</a></li>
+            </ul>
+        </div> 
+        <div class="mall-banner">
+
+        <h1>購物商城</h1>
+
+        </div>
+
+        <div class="page2-place">
+            <a href="index.html">首頁</a>
+            <p>/</p>
+            <p>購物商城</p>
+            <p>/</p>
+            <p>木吉他</p>
+        </div>
+
+        <div class="content-mall-2">
+            <div class="product">
+                <div class="mainPhoto"><img src="./images/guitar-mainPhoto.jpg" alt="" class="guitarPhoto"></div>
+                <div class="product-photo">
+                    <div class="photo-2 product-photo-2"><img src="./images/guitar-mainPhoto.jpg" alt="" class="guitar-2 guitarClick"></div>
+                    <div class="photo-3 product-photo-2"><img src="./images/guitar-2.jpg" alt="" class="guitar-3 guitarClick"></div>
+                    <div class="photo-4 product-photo-2"><img src="./images/guitar-3.jpg" alt="" class="guitar-4 guitarClick"></div>
+                </div>    
+            </div>
+            <div class="product-statement">
+                <h2>KEEP-1123 </h2>
+                <p>NT3,500</p>
+                <p class="stock">2件庫存</p>
+                <div class="amountChoose">
+                    <button type="button" class="btn_minus">-</button>
+                    <div class="amount"><p>1</p></div>
+                    <button type="button" class="btn_plus">+</button>
+                </div>
+                <div class="button-buy-cart">
+                <button type="button" class="btn_cart">加入購物車</button><br>
+                <button type="button" class="btn_buy">我要購買</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <div class="footer-2">
+            <h1>持續音樂</h1>
+            <p>電話 : (02)2712-0589<br>
+            地址 : 104台北市中山區南京東路三段219號5樓<br>
+            本網站為緯育TibaMe前端工程師班第82期學員專題作品，本平台僅供學習、展示之用。<br>
+            參考資源 : 存在音樂官方網站 這球吉他專門學院 0.3熱門音樂發展中心
+            </p>
+            <div class="icon">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-solid fa-phone-flip"></i></a>
+            <a href=""><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        document.addEventListener("click", function(e){
+            if(e.target.classList.contains("guitarClick")){
+                // let guitarPhoto = e.closest("div.product").querySelector("img.guitar-mainPhoto");
+                // console.log(e.target);
+                let guitarPhoto2 = e.target.closest("img").src;
+                console.log(guitarPhoto2);
+                
+                let guitarPhotopausestock = e.target.closest("img").closest("div.product").querySelector("img.guitarPhoto");
+                guitarPhotopausestock.src = guitarPhoto2;
+                
+                
+                
+
+
+
+            }
+        });
+            
+    </script>
+</body>
+</html>
