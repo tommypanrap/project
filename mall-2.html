@@ -25,6 +25,11 @@
                     </ol>
                 </li>
                 <li><a href="mall.html">購物商城</a></li>
+                <li class="top-cart">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <div class="amountincart">2</div>
+                    
+                </li>
             </ul>
         </div> 
         <div class="mall-banner">
@@ -56,12 +61,12 @@
                 <p class="stock">2件庫存</p>
                 <div class="amountChoose">
                     <button type="button" class="btn_minus">-</button>
-                    <div class="amount"><p>1</p></div>
+                    <div class="amount"><input type="text" class="amount1" value="1"></div>     
                     <button type="button" class="btn_plus">+</button>
                 </div>
                 <div class="button-buy-cart">
-                <button type="button" class="btn_cart">加入購物車</button><br>
-                <button type="button" class="btn_buy">我要購買</button>
+                    <button type="button" class="btn_cart">加入購物車</button><br>
+                    <button type="button" class="btn_buy">我要購買</button>
                 </div>
             </div>
         </div>
@@ -89,17 +94,36 @@
                 // let guitarPhoto = e.closest("div.product").querySelector("img.guitar-mainPhoto");
                 // console.log(e.target);
                 let guitarPhoto2 = e.target.closest("img").src;
-                console.log(guitarPhoto2);
-                
+                // console.log(guitarPhoto2);             
                 let guitarPhotopausestock = e.target.closest("img").closest("div.product").querySelector("img.guitarPhoto");
                 guitarPhotopausestock.src = guitarPhoto2;
-                
-                
-                
-
-
-
             }
+
+            if(e.target.classList.contains("btn_plus")){
+                // console.log(e.target);
+                let amount = e.target.previousElementSibling.querySelector("input.amount1")
+                let amountValue = parseInt(amount.value);
+                amountValue += 1; 
+                e.target.previousElementSibling.querySelector("input.amount1").value = amountValue;
+            }
+
+            if(e.target.classList.contains("btn_minus")){
+                // console.log(e.target);
+                let amount = e.target.nextElementSibling.querySelector("input.amount1")
+                
+                let amountValue = parseInt(amount.value);
+                if( amountValue > 1 ){
+                amountValue -= 1; 
+                e.target.nextElementSibling.querySelector("input.amount1").value = amountValue;
+                }else{}
+            }
+
+            if(e.target.classList.contains("btn_cart")){
+                 let amount = e.target.closest("div.product-statement").querySelector("input.amount1").value
+                 document.querySelector("div.amountincart").innerHTML = amount;
+                 document.querySelector("div.amountincart").style.display = "block";
+            }
+
         });
             
     </script>

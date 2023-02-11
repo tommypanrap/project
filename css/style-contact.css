@@ -715,6 +715,9 @@
     display:block;
 } 
 
+.fa-cart-shopping{
+    font-size: 20px;
+}
 
 /* 回到頁面頂端按鈕 */
 #myBtn {
@@ -768,6 +771,9 @@
     color:rgb(255, 255, 255);
 }
 
+.fa-cart-shopping{
+    font-size: 20px;
+}
 
 /* 麵包屑 */
 .page2-place{

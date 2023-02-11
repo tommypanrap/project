@@ -81,6 +81,10 @@
     color:rgb(255, 255, 255);
 }
 
+.fa-cart-shopping{
+    font-size: 20px;
+}
+
 /* 按鈕 */
 .content-text a{
     display :block;

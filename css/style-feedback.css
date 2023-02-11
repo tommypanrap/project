@@ -87,6 +87,36 @@
     color:rgb(255, 255, 255);
 }
 
+.fa-cart-shopping{
+    font-size: 20px;
+    /* position:relative; */
+    /* margin-top: 5px; */
+}
+
+.amountincart{
+    
+    /* display: inline-block; */
+    display: block;
+    /* display: flex; */
+    text-align: center;
+    line-height: 1.4;
+    font-weight: bold;
+    color:white;
+    width: 22px;
+    height: 22px;
+    background-color: red;
+    z-index: 10;
+    position: absolute;
+    left: 23px;
+    top: 4px;
+    border-radius: 50%;
+    display: none;
+}
+
+.top-cart{
+    position: relative;
+}
+
 
 /* 學生評論 */
 

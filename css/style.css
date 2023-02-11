@@ -184,6 +184,10 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     display:block;
 } 
 
+.wrapper .fa-cart-shopping{
+    color:white;
+}
+
 .top .fa-bars{
     color:white;
     margin-top: 20px;
@@ -1000,7 +1004,10 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     color:rgb(255, 255, 255);
 }
 
-
+.fa-cart-shopping{
+    font-size: 20px;
+    
+}
 /* 麵包屑 */
 .page2-place{
     margin:20px 10vw 20px ;
