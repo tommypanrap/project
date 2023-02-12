@@ -27,7 +27,7 @@
                 <li><a href="mall.html">購物商城</a></li>
                 <li class="top-cart">
                         <i class="fa-solid fa-cart-shopping"></i>
-                        <div class="amountincart">2</div>
+                        <div class="amountincart" >0</div>
                     
                 </li>
             </ul>
@@ -119,12 +119,30 @@
             }
 
             if(e.target.classList.contains("btn_cart")){
+                
                  let amount = e.target.closest("div.product-statement").querySelector("input.amount1").value
-                 document.querySelector("div.amountincart").innerHTML = amount;
+                 let amountValue = document.querySelector("div.amountincart").innerHTML;
+                 let amountValue2 = parseInt(amountValue);
+                 let amount2 = parseInt(amount);
+                 amountValue2 += amount2;
+                 console.log(amountValue2);
+                //  console.log(amountValue);
+                 document.querySelector("div.amountincart").innerHTML = amountValue2;
                  document.querySelector("div.amountincart").style.display = "block";
+
             }
 
         });
+
+        let inputAmount1 = document.querySelector("input.amount1");
+        inputAmount1.addEventListener("keydown",function(e){
+            
+            if( (e.which >= 48 && e.which <= 57) || e.which == 8 ){ 
+  
+            }else{
+            e.preventDefault(); 
+            }
+        })
             
     </script>
 </body>
