@@ -7,7 +7,7 @@
     position:relative;
 }
 
-.wrapper{
+.wrapper-login{
     width: 100%;
     min-width: 1200px;
     font-family: sans-serif;
@@ -710,7 +710,7 @@
     flex-grow: 0;
 }
 
-.top-2 ul>li:nth-child(3) > a{
+.top-2 ul>li:nth-child(7) > a{
     color:rgb(235, 160, 92);
 }
 
