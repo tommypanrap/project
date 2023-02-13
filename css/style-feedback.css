@@ -87,6 +87,13 @@
     color:rgb(255, 255, 255);
 }
 
+.top-2 ul li:last-child{
+    flex-grow: 0;
+}
+
+.top-2 ul li:nth-child(6){
+    flex-grow: 0;
+}
 .fa-cart-shopping{
     font-size: 20px;
     /* position:relative; */

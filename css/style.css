@@ -146,8 +146,14 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 
 .top ul li{
     flex-grow: 1;
-    
-    
+}
+
+.top ul li:last-child{
+    flex-grow: 0;
+}
+
+.top ul li:nth-child(6){
+    flex-grow: 0;
 }
 
 .top ul li a{
@@ -208,6 +214,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     display:flex;
     position:relative;
     width: 100%;
+    margin-top: 70px;
 }
 
 .content img{
@@ -263,8 +270,8 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 
 .content-text p{
     margin-top: 70px;
-    line-height: 1.5;
-    font-size: 1rem;
+    line-height: 2 ;
+    font-size: 20px;
 }
 
 /* 按鈕 */
@@ -934,6 +941,14 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     flex-grow: 1;
 }
 
+.top-2 ul li:last-child{
+    flex-grow: 0;
+}
+
+.top-2 ul li:nth-child(6){
+    flex-grow: 0;
+}
+
 .top-2 ul>li:first-child > a{
     color:rgb(235, 160, 92);
 }
@@ -1008,6 +1023,13 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     font-size: 20px;
     
 }
+
+.fa-user {
+    margin: 0 10px;
+    font-size: 20px;
+}
+
+
 /* 麵包屑 */
 .page2-place{
     margin:20px 10vw 20px ;
@@ -1450,7 +1472,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     text-align: center;
 }
 
-.fa-user {
+/* .fa-user {
     color:white;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -1462,7 +1484,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     margin-top: 10px;
     margin-bottom: 10px;
     font-size: 32px;
-}
+} */
 
 .course-information-1-1{
     display:flex;

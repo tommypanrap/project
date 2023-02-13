@@ -94,6 +94,14 @@
     padding-top: 2px;
 }
 
+.top-2 ul li:nth-child(6){
+    flex-grow: 0;
+}
+
+.top-2 ul li:last-child{
+    flex-grow: 0;
+}
+
 
 
 .mall-banner{
