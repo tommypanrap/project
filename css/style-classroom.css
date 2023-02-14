@@ -16,6 +16,8 @@
     /* position:absolute; */
     /* border: 1px solid red; */
     display:flex;
+    position: fixed;
+    z-index: 2;
 }
 
 .top-2 img{
@@ -212,8 +214,9 @@
 
 /* 麵包屑 */
 .page2-place{
-    margin:20px 10vw 20px ;
-    display: flex;  
+    margin:0px 10.41% 20px ;
+    display: flex; 
+    padding-top: 75px;
 }
 
 .page2-place a{

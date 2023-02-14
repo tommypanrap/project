@@ -322,5 +322,22 @@ function topFunction() {
     AOS.init();
   </script>
 
+<script>
+        
+
+  window.addEventListener("scroll", function(){
+    let top = document.querySelector("div.top");
+    // console.log(top);
+    if(window.scrollY > 900){
+      top.classList.add("scroll_blackbackground");
+    }else{
+      top.classList.remove("scroll_blackbackground")
+    }
+    // console.log("scrollX: " + window.scrollX);
+    // console.log("scrollY: " + window.scrollY);
+  });
+
+</script>
+
 </body>
 </html>

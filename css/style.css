@@ -1,6 +1,7 @@
 @import url('reset.css');
 
 
+
 .body{
     /* font-family: Arial, Helvetica, sans-serif; */
     font-size: 21px;
@@ -120,6 +121,12 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     /* border: 1px solid red; */
     display:flex;
     z-index: 2;
+    position: fixed;
+}
+
+
+.scroll_blackbackground{
+    background-color: rgb(63, 68, 72);
 }
 
 
@@ -921,6 +928,8 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     /* position:absolute; */
     /* border: 1px solid red; */
     display:flex;
+    position: fixed;
+    z-index: 2;
 }
 
 
@@ -1038,10 +1047,10 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 
 /* 麵包屑 */
 .page2-place{
-    margin:20px 10vw 20px ;
-    /* padding:10px 10vw 10px ; */
+    margin:0px 10.41% 20px ;
     display: flex; 
-    /* background-color: rgb(174, 174, 174);  */
+    padding-top: 75px;
+    
 }
 
 .page2-place a{

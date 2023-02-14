@@ -671,6 +671,8 @@
     /* position:absolute; */
     /* border: 1px solid red; */
     display:flex;
+    position: fixed;
+    z-index: 2;
 }
 
 
@@ -735,7 +737,7 @@
     background-image: url("../images/login-background.jpg");
     background-size: cover;
     padding: 50px 0 100px;
-    background-position: center -840px;
+    background-position: center -350px;
     background-repeat: no-repeat;
 }
 
@@ -935,10 +937,9 @@ margin-left: 125px;
 
 /* 麵包屑 */
 .page2-place{
-    margin:20px 10vw 20px ;
-    /* padding:10px 10vw 10px ; */
+    margin:0px 10.41% 20px ;
     display: flex; 
-    /* background-color: rgb(174, 174, 174);  */
+    padding-top: 75px;
 }
 
 .page2-place a{
