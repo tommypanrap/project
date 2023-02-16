@@ -30,7 +30,7 @@
               <li><a href="feedback.html">學生好評</a></li>
               <li><a href="contact.html">聯絡我們</a></li>
               <li><a href="">關於我們</a>
-                  <ol>
+                  <ol class="aboutus">
                       <li><a href="brand.html">品牌故事</a></li>   
                       <li><a href="classroom.html">教室環境</a></li>
                   </ol>
@@ -116,20 +116,24 @@
         </div> -->
 
         <div class="content-2">
-        <div class="swiper mySwiper">
+        <div class="swiper mySwiper mySwiper-rwd classhover">
             <h1>課程內容</h1>
             <div class="swiper-wrapper">
             
               <div class="swiper-slide swiper-slide-2">
                 <div class="swiper-slide-2-1">
-                <img src="./images/2-course-1.png" alt="">
+                  <div class="classforhover">
+                  <a href="course-guitar.html"><img src="./images/2-course-1.png" alt="" ></a>
+                  </div>
                 <h2>吉他</h2>
                 <p>無論是沒有基礎，或者已經會刷和弦的人，我們這邊的老師都可以依照學生的程度做課程規劃。</p>
                 </div>
               </div>
               <div class="swiper-slide swiper-slide-2">
                 <div class="swiper-slide-2-1">
-                <img src="./images/2-course-2.png" alt=""><h2>爵士鼓</h2>
+                  <div class="classforhover">
+                <img src="./images/2-course-2.png" alt=""></div><h2>爵士鼓</h2>
+              
                 <p>鼓為樂曲中不可或缺的腳色。<br>
                     認識節奏、培養律動，理解打擊的肌肉控制，讓學生能演奏喜歡的歌曲。 </p>
                 </div>
@@ -137,13 +141,18 @@
               </div>
               <div class="swiper-slide swiper-slide-2">
                 <div class="swiper-slide-2-1">
-                <img src="./images/2-course-3.png" alt=""><h2>歌唱</h2>
+                  <div class="classforhover">
+                <img src="./images/2-course-3.png" alt="">
+              </div>
+                <h2>歌唱</h2>
+                
                 <p>從共鳴位置、律動、咬字著手，為學生客製化課程。</p>
                 </div>
               </div>
               <div class="swiper-slide swiper-slide-2">
                 <div class="swiper-slide-2-1">
-                <img src="./images/2-course-4.png" alt=""><h2>KEYBOARD</h2>
+                  <div class="classforhover">
+                <img src="./images/2-course-4.png" alt=""></div><h2>KEYBOARD</h2>
                 <p>認識和弦，學習樂理，<br>
                   讓你不再只會看譜彈琴。</p>
                 </div>
@@ -151,7 +160,8 @@
 
               <div class="swiper-slide swiper-slide-2">
                 <div class="swiper-slide-2-1">
-                <img src="./images/2-course-5.png" alt=""><h2>創作</h2>
+                  <div class="classforhover">
+                <img src="./images/2-course-5.png" alt=""></div><h2>創作</h2>
                 
                 <p>創作</p>
                 </div>
@@ -277,8 +287,18 @@
 
 <script>
     var swiper2 = new Swiper(".mySwiper", {
-      slidesPerView: 3,
-      spaceBetween: 30,
+      
+      breakpoints:{
+        414:{
+          slidesPerView:1,
+          spaceBetween: 30,
+        },
+        1280: {
+          slidesPerView:3,
+          spaceBetween: 30,
+        }
+      },
+      
     //   slidesPerView: 'auto',
     //   loop: true,
       pagination: {
@@ -301,6 +321,8 @@ let mybutton = document.getElementById("myBtn");
 
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};
+
+
 
 function scrollFunction() {
   if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
@@ -327,11 +349,17 @@ function topFunction() {
 
   window.addEventListener("scroll", function(){
     let top = document.querySelector("div.top");
+    let aboutus = document.querySelector("ol.aboutus");
+    console.log(aboutus);
     // console.log(top);
+
+    
     if(window.scrollY > 900){
       top.classList.add("scroll_blackbackground");
+      aboutus.classList.add("scroll_blackbackground");
     }else{
-      top.classList.remove("scroll_blackbackground")
+      top.classList.remove("scroll_blackbackground");
+      aboutus.classList.remove("scroll_blackbackground");
     }
     // console.log("scrollX: " + window.scrollX);
     // console.log("scrollY: " + window.scrollY);

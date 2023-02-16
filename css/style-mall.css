@@ -63,11 +63,13 @@
     /* left:467.76px;
     top:56px; */
     width: 170px;
-    display:none;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .5s;
 }
 
 .top-2>ul>li:nth-child(4):hover ol{
-    display:block;
+    max-height: 200px;
     z-index: 2;
 } 
 

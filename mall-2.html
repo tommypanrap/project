@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>學生好評</title>
+    <title>購物商城</title>
     <link rel="stylesheet" href="css/style-mall-2.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 
@@ -26,7 +26,33 @@
                 </li>
                 <li><a href="mall.html">購物商城</a></li>
                 <li class="top-cart">
-                        <i class="fa-solid fa-cart-shopping"></i>
+                        <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                        
+                            <div class="cart-topright">
+                                <ul>
+                                    <li>購物車</li>
+                                </ul>
+                                <div class="cart-topright-row2">
+                                    <img src="./images/guitar-mainPhoto.jpg" alt="">
+                                    <ul>
+                                        <li>KEEP-1123</li>
+                                        <li>NT 3,500</li>
+                                        <li class="cart-topright-amount">數量 : <p class="cart-topright-amount-p">1</p></li>
+                                    </ul>
+                                    <ul class="deleteicon">
+                                        <li>
+                                            <img src="./images/delete.png" alt="">
+                                        </li>
+                                    </ul>
+                                </div>
+                    
+                                
+                                <ul class="cart-topright-total-ul">
+                                    <li class="cart-topright-total">合計 NT <p class="cart-topright-total-p">3,500</p></li><p></p>
+                                </ul>
+                                <button class="cart-topright-buy">前往結帳</button>
+                            </div>
+                        
                         <div class="amountincart" >0</div>
                     
                 </li>
@@ -35,6 +61,9 @@
                 </li>
             </ul>
         </div> 
+
+        
+        
         <div class="mall-banner">
 
         <h1>購物商城</h1>
@@ -132,6 +161,9 @@
                 //  console.log(amountValue);
                  document.querySelector("div.amountincart").innerHTML = amountValue2;
                  document.querySelector("div.amountincart").style.display = "block";
+                 document.querySelector("p.cart-topright-amount-p").innerHTML = amountValue2 ;
+                 document.querySelector("p.cart-topright-total-p").innerHTML = amountValue2 * 3500 ;
+
 
             }
 

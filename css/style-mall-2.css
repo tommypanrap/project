@@ -55,11 +55,13 @@
     /* left:467.76px;
     top:56px; */
     width: 170px;
-    display:none;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .5s;
 }
 
 .top-2>ul>li:nth-child(4):hover ol{
-    display:block;
+    max-height: 200px;
     z-index: 2;
 } 
 
@@ -119,7 +121,7 @@
     width:100%;
     min-width: 1200px;
     font-family: Arial, Helvetica, sans-serif;
-    
+    position: relative;
     /* background-image: url(../images/page-2-background-image-2.png); */
     /* background-size: cover; */
     /* background-size: 100% auto; */
@@ -130,7 +132,7 @@
 
 .mall-banner h1{
     font-size :30px;
-    position:relative;
+    /* position:relative; */
     color:rgb(255, 255, 255);
     font-weight: bold;
     text-align: center;
@@ -271,7 +273,115 @@
 
 }
 
+.top-cart>a:hover + .cart-topright{
+    display: block;
+}
 
+.cart-topright:hover{
+    display: block;
+}
+
+.cart-topright{
+    width: 320px;
+    background-color: rgb(255, 251, 246);
+    z-index:3;
+    position: absolute;
+    top:55px;
+    right:0;
+    padding: 20px 20px 20px;
+    font-size: 16px;
+    line-height: 1.5;
+    box-sizing: border-box;
+    border: 1px solid rgb(223, 199, 171);
+    display: none;
+    
+}
+
+.cart-topright>ul:first-child{
+    font-size: 20px;
+    border-bottom:1px solid rgb(233, 213, 189);
+    height: 35px;
+    margin-bottom: 10px;
+    display:block;
+    width: auto;
+    margin-right: auto;
+    line-height: 2;
+    /* line-height: 2; */
+}
+
+.cart-topright-row2{
+    /* width: 290px; */
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+.cart-topright-row2>img{
+    width: 120px;
+    height: auto;
+    margin-left: auto;
+    margin-top: auto;
+}
+
+.cart-topright-row2 ul{
+    margin-left: 20px;
+    display: block;
+    width: auto;
+    margin-right: auto;
+    height: auto;
+    line-height: 1.4;
+}
+
+.cart-topright-amount{
+    display: flex;
+}
+
+.cart-topright .cart-topright-row2 .deleteicon{
+    flex-grow: 1;
+    text-align: right;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    /* margin-left: 30px; */
+}
+
+.cart-topright-row2 ul li>img{
+    width: 20px;
+    height: auto;
+    margin-left: auto;
+    margin-top: auto;
+    /* text-align: center; */
+    
+}
+
+.cart-topright-total{
+    text-align: right;
+    font-size: 20px;
+    margin-top: 20px;
+    
+}
+
+.cart-topright .cart-topright-total-ul{
+    display: block;
+    width: auto;
+    margin-right: auto;
+    line-height: 1;
+    height: auto;
+}
+
+.cart-topright-buy{
+    margin-top: 15px;
+    background-color:rgb(193, 115, 44);
+    color:white;
+    border: none;
+    width: 100%;
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+.cart-topright-total{
+    display: flex;
+    justify-content: flex-end;
+}
 
 
 /* 按鈕 */
