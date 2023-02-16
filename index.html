@@ -382,6 +382,15 @@ function topFunction() {
 
         }
 
+      if(e.target.classList.contains("fa-bars")){
+        // console.log(e.target);
+        let ulafterclick = e.target.nextElementSibling;
+        console.log(ulafterclick);
+        ulafterclick.classList.toggle("ulafterclick");
+      }
+
+      
+
 
 
     })

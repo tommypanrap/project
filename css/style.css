@@ -2096,7 +2096,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
         display:block;
         background-color:rgb(173, 98, 25); 
         position: fixed;
-        right: 0px;
+        right: -100%;
         top: 55px;
         width: 80%;
         margin-right: 0px;
@@ -2162,6 +2162,10 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     /* .top .fa-bars:hover ~ ul{
         right:0px;
     } */
+
+    .wrapper .top .ulafterclick{
+        right:0;
+    }
 
     .top-2 .fa-bars{
         display:block;
