@@ -292,15 +292,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     
 }
 
-.square{
-    background-color:rgb(233, 124, 58);
-    width: 390px;
-    height: 387px;
-    position:absolute;
-    left:10.5vw;
-    top:60px;
-    z-index:-1;
-}
+
 
 
 .content-text{
@@ -2083,17 +2075,21 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 @media screen and (max-width: 414px){
     .body{
         height: 100%;
+        width: 100%;
     }
+    
     
     .top{
         /* display: none; */
         min-width: 0;
         justify-content: space-between;
+        width: 100%;
         /* position:relative; */
     }
 
     .top-2{
         /* display: none; */
+        width: 100%;
         min-width: 0;
         justify-content: space-between;
         /* position:relative; */
@@ -2105,7 +2101,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
         position: fixed;
         right: -414px;
         top: 55px;
-        width: 100%;
+        width: 70%;
         margin-right: 0px;
         height:100%;
         transition:all .5s;
@@ -2118,7 +2114,8 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
         position: fixed;
         right: -414px;
         top: 55px;
-        width: 100%;
+        /* width: 100%; */
+        width: 70%;
         margin-right: 0px;
         height:100%;
         transition:all .5s;
@@ -2181,6 +2178,15 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
         margin-top: 10px;
         margin-bottom: 10px;
        
+    }
+
+    .top ol{
+        display: block;
+        max-height:200px;
+        top:0;
+        left:-150px;
+        width: 130px;
+        background-color: rgba(161, 82, 9 , .9);
     }
     .wrapper{
         width: auto;
@@ -2249,7 +2255,11 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
         display: block;
     }
 
-
+    .content-2{
+        padding-left: 20px;
+        padding-right: 20px;
+        box-sizing: border-box;
+    }
 
     .content-3{
         display: block;
@@ -2330,6 +2340,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     .footer{
         padding-left: 20px;
         padding-right: 20px;
+        box-sizing: border-box;
     }
 
     .footer p{
@@ -2400,6 +2411,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     .footer-2{
         padding-left: 20px;
         padding-right: 20px;
+        box-sizing: border-box;
     }
 
     .footer-2 p{
@@ -2506,5 +2518,6 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
         margin-top: 20px;
     }
 
+    
 
 }

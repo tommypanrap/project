@@ -101,6 +101,13 @@
     font-size: 20px;
 }
 
+.top-2 .fa-bars{
+    color:rgb(0, 0, 0);
+    margin-top: 20px;
+    font-size: 20px;
+    display:none;
+}
+
 /* 按鈕 */
 .content-text a{
     display :block;
@@ -416,3 +423,81 @@
     background-color: rgb(233, 124, 58);
     color:white;
 } */
+
+@media screen and (max-width: 414px){
+    .body{
+        height: 100%;
+        width: 100%;
+    }
+    .top-2{
+        /* display: none; */
+        width: 100%;
+        min-width: 0;
+        justify-content: space-between;
+        /* position:relative; */
+    }
+    .top-2 ul{
+        display:block;
+        background-color:rgba(161, 82, 9 , .9); 
+        position: fixed;
+        right: -414px;
+        top: 55px;
+        /* width: 100%; */
+        width: 70%;
+        margin-right: 0px;
+        height:100%;
+        transition:all .5s;
+        /* display:none; */
+    }
+    .top-2 ul li a{
+        text-align: center;
+        margin: 10px 0;
+        color:white;
+    }
+    .top-2 ul li{
+        width: 80%;
+        /* text-align: center; */
+        border-bottom: white solid 1px;
+        margin: 0 auto;
+        
+    }
+    .top-2 .fa-bars{
+        display:block;
+        margin-right: 20px;
+    }
+
+    .top-2 .fa-bars:hover ~ ul{
+        right:0px;
+    }
+    .wrapper-page2{
+        width: 100%;
+    }
+
+    .classroom{
+        width: 100%;
+        flex-direction: column;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .classroom1, .classroom2, .classroom3, .classroom4, .classroom5{
+        width: 100%;
+        margin: 0;
+    }
+    .classroom img{
+        width: 100%;
+    }
+    .footer-2{
+        padding-left: 20px;
+        padding-right: 20px;
+        box-sizing: border-box;
+    }
+
+    .footer-2 p{
+        text-align: left;
+    }
+
+    .footer-2 h1{
+        text-align: left;
+    }
+}

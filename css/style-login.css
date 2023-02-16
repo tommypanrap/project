@@ -703,6 +703,13 @@
     flex-grow: 0;
 }
 
+.top-2 .fa-bars{
+    color:rgb(0, 0, 0);
+    margin-top: 20px;
+    font-size: 20px;
+    display:none;
+}
+
 .fa-user {
     margin: 0 10px;
     font-size: 20px;
@@ -1893,31 +1900,55 @@ margin-left: 125px;
 @media screen and (max-width: 414px){
     .body{
         height: 100%;
+        width: 100%;
     }
-    
-    .top{
+
+    .wrapper-login{
+        min-width: 0;
+    }
+
+    .top-2{
         /* display: none; */
+        width: 100%;
         min-width: 0;
         justify-content: space-between;
         /* position:relative; */
     }
 
-    .top ul{
+    .top-2 ul{
         display:block;
         background-color:rgba(161, 82, 9 , .9); 
         position: fixed;
         right: -414px;
         top: 55px;
-        width: 100%;
+        /* width: 100%; */
+        width: 70%;
         margin-right: 0px;
         height:100%;
         transition:all .5s;
+        /* display:none; */
     }
+    .top-2 .fa-bars{
+        display:block;
+        margin-right: 20px;
+    }
+
+    .top-2 .fa-bars:hover ~ ul{
+        right:0px;
+    }
+
 
     .top ul li a{
         text-align: center;
         margin: 10px 0;
     }
+
+    .top-2 ul li a{
+        text-align: center;
+        margin: 10px 0;
+        color:white;
+    }
+
 
     .top ul li{
         width: 80%;
@@ -1926,53 +1957,61 @@ margin-left: 125px;
         margin: 0 auto;
     }
 
+    .top-2 ul li{
+        width: 80%;
+        /* text-align: center; */
+        border-bottom: white solid 1px;
+        margin: 0 auto;
+        
+    }
+
     .top ul li:last-child(){
         border-bottom: none;
     }
 
-    .top .fa-bars{
-        display:block;
-        margin-right: 20px;
+    .login-content{
+        padding: 0;
+        padding-top: 20px;
+        padding-bottom: 50px;
+        padding-left: 10px;
+        padding-right: 10px;
+        box-sizing: border-box;
+        background-position:center center;
     }
-
-    .top .fa-bars:hover ~ ul{
-        right:0px;
+    .form_login{
+        padding: 20px;
+        box-sizing: border-box;
+        width: calc(100% - 10px);
     }
-
-    .top img{
-        margin-left: 20px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-       
+    .accountnumber{
+        width: 100%;
     }
-    .wrapper{
-        width: auto;
+    .password{
+        width: 100%;
+    }
+    .form_login ul>li:nth-child(4){
+        margin-left: 0;
+    }
+    .form_login ul>li:nth-child(4)>a{
+        margin-right: 0;
+    }
+    .form_login ul>li:nth-child(7) p{
+        margin-left: 0;
+    }
+    .form_login ul>li:nth-child(8){
+        margin-left: 0;
+    }
+    .footer-2{
         min-width: 0;
+        padding-left: 20px;
+        padding-right: 20px;
+        box-sizing: border-box;
     }
-
-    .swiper{
-        height: 500px;
+    .footer-2 p{
+        text-align: left;
     }
+    .footer-2 h1{}
 
-    .content{
-        width: auto;
-        display: none;
-    }
 
-    .content-2{
-        display: none;
-    }
-
-    .content-3{
-        display: none;
-    }
-
-    .content-4{
-        display: none;
-    }
-
-    .footer{
-
-    }
-
+        
 }

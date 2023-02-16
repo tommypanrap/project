@@ -676,6 +676,13 @@
     z-index: 2;
 }
 
+.top-2 .fa-bars{
+    color:rgb(0, 0, 0);
+    margin-top: 20px;
+    font-size: 20px;
+    display:none;
+}
+
 
 
 .top-2 img{
@@ -1775,14 +1782,29 @@
         height: 100%;
     }
     
-    .top{
+    .top-2{
         /* display: none; */
         min-width: 0;
         justify-content: space-between;
         /* position:relative; */
     }
 
-    .top ul{
+    
+
+    
+
+    
+
+    .top ul li:last-child(){
+        border-bottom: none;
+    }
+
+    .top-2 .fa-bars{
+        display:block;
+        margin-right: 20px;
+    }
+
+    .top-2 ul{
         display:block;
         background-color:rgba(161, 82, 9 , .9); 
         position: fixed;
@@ -1792,30 +1814,23 @@
         margin-right: 0px;
         height:100%;
         transition:all .5s;
+        /* display:none; */
     }
 
-    .top ul li a{
-        text-align: center;
-        margin: 10px 0;
-    }
-
-    .top ul li{
+    .top-2 ul li{
         width: 80%;
         /* text-align: center; */
         border-bottom: white solid 1px;
         margin: 0 auto;
     }
 
-    .top ul li:last-child(){
-        border-bottom: none;
+    .top-2 ul li a{
+        text-align: center;
+        margin: 10px 0;
+        color:white;
     }
 
-    .top .fa-bars{
-        display:block;
-        margin-right: 20px;
-    }
-
-    .top .fa-bars:hover ~ ul{
+    .top-2 .fa-bars:hover ~ ul{
         right:0px;
     }
 
@@ -1854,5 +1869,56 @@
     .footer{
 
     }
+    .wrapper-contact{
+        min-width: 0;
+    }
+    .contact-content{
+        display: block;
+    }
+    .contact-content-background_color{
+        padding: 30px 20px 30px;
+    }
+    .footer-2{
+        padding-left: 20px;
+        padding-right: 20px;
+        min-width: 0;
+    }
 
+    .footer-2 p{
+        text-align: left;
+    }
+
+    .footer-2 h1{
+        text-align: left;
+    }
+    .row1{
+        flex-direction: column;
+    }
+    .name{
+        width: 350px;
+    }
+
+    .phone{
+        width: 350px;
+    }
+    .row2{
+
+    }
+    .e-mail-text{
+        width: 350px;
+    }
+    .row4 textarea{
+        width: 350px;
+    }
+    .contact-content-1 a{
+        margin-left: 0;
+    }
+    .contact-content-1{
+        width: 100%;
+    }
+
+    .contact-content-1{
+        flex-wrap: nowrap;
+        margin-left: 15px;
+    }
 }

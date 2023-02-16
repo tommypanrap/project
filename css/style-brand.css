@@ -20,6 +20,13 @@
     z-index: 2;
 }
 
+.top-2 .fa-bars{
+    color:rgb(0, 0, 0);
+    margin-top: 20px;
+    font-size: 20px;
+    display:none;
+}
+
 .top-2 img{
     height: 50px;
     margin-left: 10vw;
@@ -514,4 +521,117 @@
     background-color: rgb(233, 124, 58);
     color:white;
 } */
+
+@media screen and (max-width: 414px){
+
+    .body{
+        height: 100%;
+        width: 100%;
+    }
+    .top-2{
+        /* display: none; */
+        width: 100%;
+        min-width: 0;
+        justify-content: space-between;
+        /* position:relative; */
+    }
+    .top-2 ul{
+        display:block;
+        background-color:rgba(161, 82, 9 , .9); 
+        position: fixed;
+        right: -414px;
+        top: 55px;
+        /* width: 100%; */
+        width: 70%;
+        margin-right: 0px;
+        height:100%;
+        transition:all .5s;
+        /* display:none; */
+    }
+    .top-2 ul li a{
+        text-align: center;
+        margin: 10px 0;
+        color:white;
+    }
+    .top-2 ul li{
+        width: 80%;
+        /* text-align: center; */
+        border-bottom: white solid 1px;
+        margin: 0 auto;
+        
+    }
+    .top-2 .fa-bars{
+        display:block;
+        margin-right: 20px;
+    }
+
+    .top-2 .fa-bars:hover ~ ul{
+        right:0px;
+    }
+
+    .brand-banner{
+
+    }
+
+    .wrapper-page2{
+        min-width: 0;
+    }
+
+    .brand{
+        /* display: none; */
+        flex-direction: column;
+        margin: 0;
+        padding: 20px;
+    }
+    .brand-2{
+        /* display: none; */
+        flex-direction: column;
+        margin: 0;
+    }
+    .footer-2{
+        min-width: 0;
+        padding-left: 20px;
+        padding-right: 20px;
+        box-sizing: border-box;
+    }
+    .footer-2 p{
+        text-align: left;
+    }
+    .footer-2 h1{
+        text-align: left;
+    }
+    .brand-banner{
+        padding-bottom: 50%;
+    }
+
+    .brand-banner h1{
+        top:65%;
+    }
+
+    .square{
+        display: none;
+    }
+    .brand-left{
+        margin: 0;
+    }
+    .brand img{
+        margin: 0;
+        width: 100%;
+    }
+
+    .brand-2-left iframe{
+        width: 100%;
+        height: 300px;
+    }
+    .brand-2-right{
+        margin-left: 0;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+    .brand-2-right-1 p:last-child:after{
+        width: 100%;
+    }
+
+
+}
 
