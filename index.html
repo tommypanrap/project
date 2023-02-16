@@ -29,7 +29,7 @@
               <li><a href="course2.html">課程</a></li>
               <li><a href="feedback.html">學生好評</a></li>
               <li><a href="contact.html">聯絡我們</a></li>
-              <li><a href="">關於我們</a>
+              <li><a href="" class="aboutusclick">關於我們</a>
                   <ol class="aboutus">
                       <li><a href="brand.html">品牌故事</a></li>   
                       <li><a href="classroom.html">教室環境</a></li>
@@ -350,7 +350,7 @@ function topFunction() {
   window.addEventListener("scroll", function(){
     let top = document.querySelector("div.top");
     let aboutus = document.querySelector("ol.aboutus");
-    console.log(aboutus);
+    // console.log(aboutus);
     // console.log(top);
 
     
@@ -368,9 +368,18 @@ function topFunction() {
 </script>
 
 <script>
+    
     document.addEventListener("click", function(e){
-        if(e.target.classList.contains("aboutus")){
-          console.log(e);
+      
+      
+      if(e.target.classList.contains("aboutusclick")){
+          e.preventDefault();
+          // console.log(e.target);
+          let aboutus = e.target.nextElementSibling;
+          console.log(aboutus);
+          aboutus.classList.toggle("heightafterclick");
+        }else{
+
         }
 
 
