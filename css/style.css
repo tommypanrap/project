@@ -259,6 +259,13 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     display:none;
 }
 
+.top-2 .fa-bars{
+    color:rgb(0, 0, 0);
+    margin-top: 20px;
+    font-size: 20px;
+    display:none;
+}
+
 .banner{
     background-image: url('../images/1.png');
     background-size: cover;
@@ -2085,6 +2092,13 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
         /* position:relative; */
     }
 
+    .top-2{
+        /* display: none; */
+        min-width: 0;
+        justify-content: space-between;
+        /* position:relative; */
+    }
+
     .top ul{
         display:block;
         background-color:rgba(161, 82, 9 , .9); 
@@ -2098,16 +2112,46 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
         /* display:none; */
     }
 
+    .top-2 ul{
+        display:block;
+        background-color:rgba(161, 82, 9 , .9); 
+        position: fixed;
+        right: -414px;
+        top: 55px;
+        width: 100%;
+        margin-right: 0px;
+        height:100%;
+        transition:all .5s;
+        /* display:none; */
+    }
+
+
+
     .top ul li a{
         text-align: center;
         margin: 10px 0;
     }
+
+    .top-2 ul li a{
+        text-align: center;
+        margin: 10px 0;
+        color:white;
+    }
+
 
     .top ul li{
         width: 80%;
         /* text-align: center; */
         border-bottom: white solid 1px;
         margin: 0 auto;
+    }
+
+    .top-2 ul li{
+        width: 80%;
+        /* text-align: center; */
+        border-bottom: white solid 1px;
+        margin: 0 auto;
+        
     }
 
     .top ul li:last-child(){
@@ -2120,6 +2164,15 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     }
 
     .top .fa-bars:hover ~ ul{
+        right:0px;
+    }
+
+    .top-2 .fa-bars{
+        display:block;
+        margin-right: 20px;
+    }
+
+    .top-2 .fa-bars:hover ~ ul{
         right:0px;
     }
 
@@ -2286,5 +2339,172 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     .footer h1{
         text-align: left;
     }
+
+    .wrapper-page2{
+        min-width: 0;
+    }
+
+    .page2-content{
+        display: block;
+    }
+
+    .page2-place{
+        margin: 0;
+        margin-left: 20px;
+    }
+    
+    .guitar-1{
+        flex-direction: column;
+    }
+    .page2-content img{
+        width: 100%;
+    }
+    .guitar-2{
+        padding: 0;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+    .drum-1{
+        flex-direction: column;
+    }
+    .drum-2{
+        padding: 20px;
+        box-sizing: border-box;
+        order: 1;
+    }
+
+    .sing-1{
+        flex-direction: column;
+    }
+    .sing-2{
+        padding: 20px;
+        box-sizing: border-box;
+        order: 1;
+    }
+    .keyboard-1{
+        flex-direction: column;
+    }
+    .keyboard-2{
+        padding: 20px;
+        box-sizing: border-box;
+        order: 1;
+    }
+    .write-1{
+        flex-direction: column;
+    }
+    .write-2{
+        padding: 20px;
+        box-sizing: border-box;
+        order: 1;
+    }
+    .footer-2{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .footer-2 p{
+        text-align: left;
+    }
+
+    .footer-2 h1{
+        text-align: left;
+    }
+
+    /* 吉他課程 */
+    .wrapper-page2-1{
+        min-width: 0;
+    }
+    .three{
+        flex-direction: column;
+    }
+    .three-1{
+        width: 100%;
+    }
+    .three-2{
+        width: 100%;
+    }
+    .three-3{
+        width: 100%;
+    }
+    .course-information{
+        flex-direction: column;
+    }
+    .course-information-1{
+        width: 100%;
+        margin-right: 0;
+        /* padding: 6px; */
+    }
+
+    .course-information-1-1 p:first-child:before{
+        width: 290px;
+    }
+
+    .course-information-1>p{
+        margin-left: 20px;
+    }
+
+    .course-information-1-1{
+        padding:0;
+        font-size: 20px;
+        margin-left: 10px;
+    }
+
+    .course-information-2{
+        width: 100%;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .course-information-2>p{
+        margin-left: 20px;
+    }
+
+    .question1 {
+        font-size: 16px;
+    }
+    .question2 {
+        font-size: 16px;
+    }
+
+    .ask1 p:first-child{
+        font-size: 30px;
+    }
+    .answer1 p:first-child{
+        font-size: 30px;
+    }
+    .ask2 p:first-child{
+        font-size: 30px;
+    }
+    .answer2 p:first-child{
+        font-size: 30px;
+    }
+
+    .ask1{
+        padding-right: 20px;
+    }
+    .question1.active .fa-chevron-down{
+        font-size: 20px;
+        right: 10px;
+    }
+    .fa-chevron-down{
+        font-size: 20px;
+        right: 10px;
+    }
+    .ask2{
+        padding-right: 20px;
+    }
+    .question1 p{
+        margin-top: 10px;
+    }
+    .question2 p{
+        margin-top: 10px;
+    }
+    .teacher-information{
+        flex-direction: column;
+    }
+    .teacher-information .photo-page2{
+        margin-top: 20px;
+    }
+
 
 }
