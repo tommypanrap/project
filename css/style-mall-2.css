@@ -113,9 +113,29 @@
     display:none;
 }
 
+.top-2 .user2{
+    display: none;
+}
+
+.fa-user{
+    font-size: 20px;
+}
+
+.fa-cart-shopping{
+    font-size: 20px;
+}
+
+.wrapper-page2 .cartforcellphone{
+    display: none;
+}
 
 
 
+/* .top-2 ul li a{
+    text-align: left;
+    margin: 10px 0;
+    color:white;
+} */
 
 .mall-banner{
     width: 100%;
@@ -845,26 +865,41 @@
         justify-content: space-between;
         /* position:relative; */
     }
-    .top-2 ul{
-        display:block;
-        background-color:rgba(161, 82, 9 , .9); 
-        position: fixed;
-        right: -414px;
-        top: 55px;
-        /* width: 100%; */
-        width: 70%;
-        margin-right: 0px;
-        height:100%;
-        transition:all .5s;
-        /* display:none; */
-    }
+    
     .top ul li a{
         text-align: center;
         margin: 10px 0;
     }
 
-    .top-2 ul li a{
+    .top-2 ul{
+        display:block;
+        background-color:rgb(173, 98, 25); 
+        position: fixed;
+        right: -100%;
+        top: 55px;
+        width: 80%;
+        margin-right: 0px;
+        height:100%;
+        
+        transition:all .5s;
+        
+    }
+    .top-2 ul li{
+        width: auto;
+        width: 90%;
+        margin: 0 auto;
+        border-bottom: rgb(190, 145, 103) solid 1px;
+        
+    }
+
+    /* .top-2 ul li a{
         text-align: center;
+        margin: 10px 0;
+        color:white;
+    } */
+
+    .top-2 ul li a{
+        text-align: left;
         margin: 10px 0;
         color:white;
     }
@@ -874,8 +909,65 @@
         margin-right: 20px;
     }
 
-    .top-2 .fa-bars:hover ~ ul{
+    /* .top-2 .fa-bars:hover ~ ul{
         right:0px;
+    } */
+
+    .top-2 .user2{
+        display: block;
+        margin-top: 20px;
+        margin-right: 20px;
+        color:black;
+    }
+    .top-2 ul li ol li:first-child{
+        width: 100%;
+        border: none;
+        border-top: rgb(190, 145, 103) solid 1px;
+    }
+    .top-2 ul li ol li:nth-child(2){
+        width: 100%;
+        border:none;
+        border-top: rgb(190, 145, 103) solid 1px;
+    }
+    .top-2 ul li:nth-child(5){
+        border:none;
+    }
+    .top-2 ul li ol li a{
+        margin-left: 30px;
+    }
+
+    .top-2 ul li:nth-child(6){
+        display: none;
+    }
+    
+    .top-2 ul li:nth-child(7){
+        display: none;
+    }
+    .wrapper-page2>.top-2>ul>li:nth-child(4) .heightafterclick{
+        max-height: 200px;
+    }
+    .typesetting{
+        flex-grow: 1 ;
+    }
+    .wrapper-page2>.top-2>ul>li:nth-child(4) ol{
+        position: static;
+        display: block;
+        max-height:0px;
+        width: auto;
+        text-align: center;
+        /* margin-left: 30px; */
+        /* padding-left: 30px; */
+        background-color: transparent;
+        
+    }
+
+    .wrapper-page2 .cartforcellphone{
+        display: block;
+        margin-top: 20px;
+        margin-right: 20px;
+    }
+    .wrapper-page2 .top-2 .ulafterclick{
+        right:0;
     }
 
     .mall-banner{
@@ -921,5 +1013,25 @@
     }
     .product-statement{
         margin: 0;
+    }
+    .amountincart{
+        
+         /* display: inline-block; */
+    display: block;
+    /* display: flex; */
+    text-align: center;
+    line-height: 1.4;
+    font-weight: bold;
+    color:white;
+    width: 22px;
+    height: 22px;
+    background-color: red;
+    z-index: 10;
+    position: absolute;
+    
+    top: 7px;
+    left:345px;
+    border-radius: 50%;
+    display: none;
     }
 }

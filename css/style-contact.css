@@ -1721,6 +1721,7 @@
     border:1px solid rgb(193, 115, 44);
     padding: 0 10px;
     box-sizing: border-box;
+    font-size: 20px;
 }
 
 .e-mail-text{
@@ -1768,6 +1769,24 @@
     line-height: 2;
     margin: 20px auto 0;
     transition: color .5s;
+}
+
+.send{
+    display: block;
+    width: 130px;
+    height: 40px;
+    border: 2px solid rgb(233, 124, 58);
+    font-size: 20px;
+    text-align: center;
+    line-height: 1.5;
+    margin: 20px auto 0;
+    background-color: transparent;
+    transition: color .5s;
+}
+
+.send:hover{
+    background-color: rgb(233, 124, 58);
+    color:white;
 }
 
 .contact-content-1 a:hover{

@@ -277,6 +277,10 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     display:none;
 }
 
+.wrapper .cartforcellphone{
+    display: none;
+}
+
 .banner{
     background-image: url('../images/1.png');
     background-size: cover;
@@ -873,6 +877,17 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 
 }
 
+.feedback1{
+    width: 33.3%;
+}
+
+.feedback2{
+    width: 33.3%;
+}
+
+.feedback3{
+    width: 33.3%;
+}
 .content-4 .photo{
     background-image: url('../images/circle.png');
     background-size: 289px 289px;
@@ -1277,6 +1292,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 
 .page2-content img{
     width: 500px;
+    transition: all .3s;
     /* height: 300px; */
 }
 
@@ -1285,10 +1301,68 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     width: 100%;
 }
 
+.overlay-1{
+    position: relative;
+    width: 500px;
+    overflow: hidden;
+}
+
+.guitar-1:hover .overlay-2{
+    opacity: .3;
+}
+
+.guitar-1:hover img{
+    transform: scale(1.1);
+}
+
+.drum-1:hover .overlay-2{
+    opacity: .3;
+}
+
+.drum-1:hover img{
+    transform: scale(1.1);
+}
+
+.sing-1:hover .overlay-2{
+    opacity: .3;
+}
+
+.sing-1:hover img{
+    transform: scale(1.1);
+}
+
+.keyboard-1:hover .overlay-2{
+    opacity: .3;
+}
+
+.keyboard-1:hover img{
+    transform: scale(1.1);
+}
+.write-1:hover .overlay-2{
+    opacity: .3;
+}
+
+.write-1:hover img{
+    transform: scale(1.1);
+}
+.overlay-2{
+    content:"";
+    background-color: #fff;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left: 0;
+    opacity: 0;
+    transition: all .3s;
+
+}
+
 .guitar-2{
     background:rgba(255, 242, 227, 0.85);
-    width: 100%;
+    width: calc( 100% - 500px );
     padding:50px 10.41% 50px 50px;
+    box-sizing: border-box;
 }
 
 .drum{
@@ -1311,8 +1385,9 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 .drum-2{
     background:rgba(255, 249, 244, 0.85);
 
-    width: 100%;
+    width: calc( 100% - 500px );
     padding:50px 50px 50px 10.41%;
+    box-sizing: border-box;
 }
 
 .drum:hover{
@@ -1327,8 +1402,9 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 
 .sing-2{
     background:rgba(255, 242, 227, 0.85);
-    width: 100%;
+    width: calc( 100% - 500px );
     padding:50px 10.41% 50px 50px;
+    box-sizing: border-box;
 }
 
 .write-1{
@@ -1338,8 +1414,9 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 
 .write-2{
     background:rgba(255, 242, 227, 0.85);
-    width: 100%;
+    width: calc( 100% - 500px );
     padding:50px 10.41% 50px 50px;
+    box-sizing: border-box;
 }
 
 .keyboard-1{
@@ -1349,8 +1426,9 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 
 .keyboard-2{
     background:rgba(255, 249, 244, 0.85);
-    width: 100%;
+    width: calc( 100% - 500px );
     padding:50px 50px 50px 10.41%;
+    box-sizing: border-box;
 }
 
 .sing{
@@ -2166,6 +2244,10 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
         
     }
 
+    .wrapper .cartforcellphone{
+        display: block;
+    }
+
     .top ul li:last-child(){
         border-bottom: none;
     }
@@ -2506,6 +2588,18 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
         margin-bottom: 20px;
     }
 
+    .feedback1{
+        width: 100%;
+    }
+
+    .feedback2{
+        width: 100%;
+    }
+
+    .feedback3{
+        width: 100%;
+    }
+
     .footer{
         padding-left: 20px;
         padding-right: 20px;
@@ -2531,6 +2625,16 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     .page2-place{
         margin: 0;
         margin-left: 20px;
+    }
+    .overlay-1{
+        width: 100%;
+        font-size: 0;
+    }
+    .guitar-2{
+        width: 100%;
+    }
+    .drum-2{
+        width: 100%;
     }
     
     .guitar-1{
@@ -2560,6 +2664,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
         padding: 20px;
         box-sizing: border-box;
         order: 1;
+        width: 100%;
     }
     .keyboard-1{
         flex-direction: column;
@@ -2568,6 +2673,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
         padding: 20px;
         box-sizing: border-box;
         order: 1;
+        width: 100%;
     }
     .write-1{
         flex-direction: column;
@@ -2576,6 +2682,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
         padding: 20px;
         box-sizing: border-box;
         order: 1;
+        width: 100%;
     }
     .footer-2{
         padding-left: 20px;
