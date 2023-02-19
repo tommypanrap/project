@@ -830,7 +830,7 @@
     font-family: sans-serif;
 }
 
-@media screen and (max-width: 414px){
+@media screen and (max-width: 415px){
     .body{
         height: 100%;
         width: 100%;

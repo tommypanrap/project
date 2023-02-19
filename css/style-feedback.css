@@ -104,6 +104,16 @@
     /* margin-top: 5px; */
 }
 
+.user2{
+    display: none;
+}
+
+.wrapper-page2 .fa-bars{
+    display: none;
+}
+
+
+
 .amountincart{
     
     /* display: inline-block; */
@@ -126,6 +136,18 @@
 
 .top-cart{
     position: relative;
+}
+
+.fa-cart-shopping{
+    font-size: 20px;
+}
+
+.wrapper-page2 .cartforcellphone{
+    display: none;
+}
+
+.fa-user{
+    font-size: 20px;
 }
 
 
@@ -530,7 +552,7 @@
 
 /* 414(iPhone) */
 /* 414(iPhone) */
-@media screen and (max-width: 414px){
+@media screen and (max-width: 415px){
     .body{
         height: 100%;
     }
@@ -564,16 +586,33 @@
 
     .top-2 ul{
         display:block;
-        background-color:rgba(161, 82, 9 , .9); 
+        background-color:rgb(173, 98, 25); 
         position: fixed;
         right: -414px;
         top: 55px;
-        width: 100%;
+        width: 80%;
         margin-right: 0px;
         height:100%;
         transition:all .5s;
         /* display:none; */
     }
+    
+
+
+
+    /* .top-2 ul{
+        display:block;
+        background-color:rgb(173, 98, 25); 
+        position: fixed;
+        right: -100%;
+        top: 55px;
+        width: 80%;
+        margin-right: 0px;
+        height:100%;
+        
+        transition:all .5s;
+       
+    } */
 
 
 
@@ -583,9 +622,18 @@
     }
 
     .top-2 ul li a{
-        text-align: center;
+        text-align: left;
         margin: 10px 0;
         color:white;
+    }
+
+    .top-2 ul li{
+        width: auto;
+        width: 90%;
+        margin: 0 auto;
+        /* text-align: center; */
+        border-bottom: rgb(190, 145, 103) solid 1px;
+        
     }
 
 
@@ -596,13 +644,13 @@
         margin: 0 auto;
     }
 
-    .top-2 ul li{
+    /* .top-2 ul li{
         width: 80%;
-        /* text-align: center; */
+        
         border-bottom: white solid 1px;
         margin: 0 auto;
         
-    }
+    } */
 
     .top ul li:last-child(){
         border-bottom: none;
@@ -613,6 +661,8 @@
         margin-right: 20px;
     }
 
+    
+
     .top .fa-bars:hover ~ ul{
         right:0px;
     }
@@ -620,10 +670,50 @@
     .top-2 .fa-bars{
         display:block;
         margin-right: 20px;
+        font-size: 20px;
+        margin-top: 20px;
     }
 
-    .top-2 .fa-bars:hover ~ ul{
-        right:0px;
+    .top-2 ul li:nth-child(6){
+        display: none;
+    }
+
+    .top-2 ul li:nth-child(7){
+        display: none;
+    }
+
+    .wrapper-page2>.top-2>ul>li:nth-child(4) ol{
+        position: static;
+        display: block;
+        max-height:0px;
+        width: auto;
+        text-align: center;
+        /* margin-left: 30px; */
+        /* padding-left: 30px; */
+        background-color: transparent;
+        
+    }
+
+    .wrapper-page2>.top-2>ul>li:nth-child(4) .heightafterclick{
+        max-height: 200px;
+    }
+
+    .top-2 ul li ol li a{
+        margin-left: 30px;
+    }
+    .top-2 ul li:nth-child(5){
+        border:none;
+    }
+
+    .top-2 ul li ol li:first-child{
+        width: 100%;
+        border: none;
+        border-top: rgb(190, 145, 103) solid 1px;
+    }
+    .top-2 ul li ol li:nth-child(2){
+        width: 100%;
+        border:none;
+        border-top: rgb(190, 145, 103) solid 1px;
     }
 
     .top img{
@@ -632,6 +722,40 @@
         margin-bottom: 10px;
        
     }
+
+
+    .wrapper-page2 .top-2 .ulafterclick{
+        right:0;
+    }
+
+    .top-2 .user2{
+        color:black;
+        margin-right: 20px;
+    }
+
+    .typesetting{
+        flex-grow: 1 ;
+    }
+
+    .fa-cart-shopping{
+        margin-top: 20px;
+        margin-right: 20px;
+    }
+
+    .user2{
+        display: block;
+        color:white;
+        /* flex-grow:1; */
+        text-align:right;
+        margin-top: 20px;
+        margin-right: 10px;
+    }
+
+
+    .wrapper-page2 .cartforcellphone{
+        display: block;
+    }
+
     .wrapper{
         width: auto;
         width: 100%;
