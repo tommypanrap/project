@@ -492,7 +492,11 @@
     position: relative;
 }
 
-
+.amountincart-2{
+    display: none;
+    top:-100%;
+    left:-100%;
+}
 
 
 

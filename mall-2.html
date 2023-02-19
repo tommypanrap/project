@@ -16,7 +16,7 @@
             <div class="typesetting"></div>
             <a href="login.html" class="user2"><i class="fa-solid fa-user "></i></a>
             <i class="fa-solid fa-cart-shopping cartforcellphone"></i>
-            <div class="amountincart" >0</div>
+            <div class="amountincart amountincart-2" >0</div>
             <i class="fa-solid fa-bars"></i>
             
             <ul>
@@ -165,9 +165,11 @@
                  amountValue2 += amount2;
                  console.log(amountValue2);
                 //  console.log(amountValue);
-                 document.querySelector("div.amountincart").innerHTML = 1;
+                document.querySelectorAll("div.amountincart")[0].innerHTML = 1;
+                 document.querySelectorAll("div.amountincart")[1].innerHTML = 1;
                 //  document.querySelector("div.amountincart").innerHTML = amountValue2;
-                 document.querySelector("div.amountincart").style.display = "block";
+                document.querySelectorAll("div.amountincart")[0].style.display = "block";
+                 document.querySelectorAll("div.amountincart")[1].style.display = "block";
                  document.querySelector("p.cart-topright-amount-p").innerHTML = amountValue2 ;
                  document.querySelector("p.cart-topright-total-p").innerHTML = amountValue2 * 3500 ;
 
