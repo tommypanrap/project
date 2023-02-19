@@ -666,6 +666,7 @@
 .top-2{
     height: 55px;
     width: 100%;
+    min-width: 1200px;
     background-color: rgba(255, 255, 255);
     border-bottom: 2px solid rgba(212, 149, 91);
     /* position:absolute; */
@@ -743,10 +744,12 @@
 }
 
 .login-content{
+    width: 100%;
+    min-width: 1200px;
     background-image: url("../images/login-background.jpg");
     background-size: cover;
     padding: 50px 0 100px;
-    background-position: center -350px;
+    background-position: center center;
     background-repeat: no-repeat;
 }
 
@@ -2060,6 +2063,7 @@ margin-left: 125px;
     }
 
     .login-content{
+        min-width: 0;
         padding: 0;
         padding-top: 20px;
         padding-bottom: 50px;
@@ -2100,7 +2104,9 @@ margin-left: 125px;
     .footer-2 p{
         text-align: left;
     }
-    .footer-2 h1{}
+    .footer-2 h1{
+        text-align: left;
+    }
 
 
         

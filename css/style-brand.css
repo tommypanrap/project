@@ -544,7 +544,7 @@
     }
     .top-2 ul{
         display:block;
-        background-color:rgba(161, 82, 9 , .9); 
+        background-color:rgb(173, 98, 25); 
         position: fixed;
         right: -414px;
         top: 55px;
