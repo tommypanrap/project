@@ -15,8 +15,37 @@
             <a href="index.html"><img src="images/logo-2.png" alt=""></a>
             <div class="typesetting"></div>
             <a href="login.html" class="user2"><i class="fa-solid fa-user "></i></a>
-            <i class="fa-solid fa-cart-shopping cartforcellphone"></i>
-            <div class="amountincart amountincart-2" >0</div>
+            <div class="cart-cellphone-outside"><i class="fa-solid fa-cart-shopping cartforcellphone"></i>
+                <div class="amountincart amountincart-2">0</div>
+                <div class="cart-topright cart-topright-cellphone">
+                    <ul class="cart-cellphone-text">
+                        <li class="cart-cellphone-text-1">購物車</li>
+                    </ul>
+                    <div class="cart-topright-row2">
+                        <img src="./images/guitar-mainPhoto.jpg" alt="">
+                        <ul class="cart-cellphone-text">
+                            <li class="cart-cellphone-text-1">KEEP-1123</li>
+                            <li class="cart-cellphone-text-1">NT 3,500</li>
+                            <li class="cart-topright-amount">數量 : <p class="cart-topright-amount-p">0</p></li>
+                        </ul>
+                        <ul class="deleteicon cart-cellphone-text">
+                            <li class="deleteicon-2">
+                                <img src="./images/delete.png" alt="">
+                            </li>
+                        </ul>
+                    </div>
+        
+                    
+                    <ul class="cart-topright-total-ul">
+                        <li class="cart-topright-total">合計 NT <p class="cart-topright-total-p">0</p></li><p></p>
+                    </ul>
+                    <button class="cart-topright-buy">前往結帳</button>
+                </div>
+            
+            
+            
+            </div>
+            
             <i class="fa-solid fa-bars"></i>
             
             <ul>
@@ -32,9 +61,9 @@
                 </li>
                 <li><a href="mall.html">購物商城</a></li>
                 <li class="top-cart">
-                        <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                        <a href="#" ><i class="fa-solid fa-cart-shopping"></i></a>
                         
-                            <div class="cart-topright">
+                            <!-- <div class="cart-topright">
                                 <ul>
                                     <li>購物車</li>
                                 </ul>
@@ -57,7 +86,7 @@
                                     <li class="cart-topright-total">合計 NT <p class="cart-topright-total-p">3,500</p></li><p></p>
                                 </ul>
                                 <button class="cart-topright-buy">前往結帳</button>
-                            </div>
+                            </div> -->
                         
                         <div class="amountincart" >0</div>
                     
@@ -158,11 +187,14 @@
 
             if(e.target.classList.contains("btn_cart")){
                 
-                 let amount = e.target.closest("div.product-statement").querySelector("input.amount1").value
+                 let amount = e.target.closest("div.product-statement").querySelector("input.amount1").value;
                  let amountValue = document.querySelector("div.amountincart").innerHTML;
+                 let amountValue3 = document.querySelector("p.cart-topright-amount-p").innerHTML;
+                 let amountValue4 = parseInt(amountValue3);
+                //  console.log(amountValue3);
                  let amountValue2 = parseInt(amountValue);
                  let amount2 = parseInt(amount);
-                 amountValue2 += amount2;
+                 amountValue4 = amount2 + amountValue4;
                  console.log(amountValue2);
                 //  console.log(amountValue);
                 document.querySelectorAll("div.amountincart")[0].innerHTML = 1;
@@ -170,11 +202,35 @@
                 //  document.querySelector("div.amountincart").innerHTML = amountValue2;
                 document.querySelectorAll("div.amountincart")[0].style.display = "block";
                  document.querySelectorAll("div.amountincart")[1].style.display = "block";
-                 document.querySelector("p.cart-topright-amount-p").innerHTML = amountValue2 ;
-                 document.querySelector("p.cart-topright-total-p").innerHTML = amountValue2 * 3500 ;
+                 document.querySelector("p.cart-topright-amount-p").innerHTML = amountValue4 ;
+                 document.querySelector("p.cart-topright-total-p").innerHTML = amountValue4 * 3500 ;
 
+                 let carttoprightcellphone = document.querySelector("div.cart-topright-cellphone");
+                 console.log(carttoprightcellphone);
+                 carttoprightcellphone.style.display = "block";
+
+        
 
             }
+
+            
+
+            if(e.target.classList.contains("fa-cart-shopping")){
+                console.log("123");
+                // e.preventDefault();
+                let carttopright = document.querySelector("div.cart-topright");
+                if(carttopright.style.display == "block"){
+                    carttopright.style.display = "none"
+                    console.log("none");
+                }else{
+                    carttopright.style.display = "block"
+                    console.log("block");
+                }
+
+            }
+
+
+            
 
         });
 

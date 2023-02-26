@@ -302,13 +302,13 @@
 
 }
 
-.top-cart>a:hover + .cart-topright{
+/* .top-cart>a:hover + .cart-topright{
     display: block;
 }
 
 .cart-topright:hover{
     display: block;
-}
+} */
 
 .cart-topright{
     width: 320px;
@@ -316,7 +316,7 @@
     z-index:3;
     position: absolute;
     top:55px;
-    right:0;
+    right:10.41%;
     padding: 20px 20px 20px;
     font-size: 16px;
     line-height: 1.5;
@@ -487,6 +487,8 @@
     border-radius: 50%;
     display: none;
 }
+
+
 
 .top-cart{
     position: relative;
@@ -1018,6 +1020,39 @@
     .product-statement{
         margin: 0;
     }
+
+    .cart-cellphone-outside{
+        position: relative;
+    }
+
+    .cart-topright{
+        display: block;
+    }
+
+    .cart-topright .cart-cellphone-text{
+        position: static;
+        right:0;
+        background-color: transparent;
+        border: none;
+        width: auto;
+        height: auto;
+        flex-grow:2;
+    }
+    .cart-topright .cart-cellphone-text-1{
+        border:none;
+    }
+
+    .cart-topright .cart-topright-amount{
+        border:none;
+    }
+
+    .cart-topright .cart-topright-row2 .deleteicon-2{
+        border: none;
+    }
+
+    .cart-cellphone-text-1{
+        border:none;
+    }
     .amountincart{
         
          /* display: inline-block; */
@@ -1032,10 +1067,12 @@
     background-color: red;
     z-index: 10;
     position: absolute;
-    
     top: 7px;
-    left:345px;
+    left:8px;
     border-radius: 50%;
     display: none;
+    }
+    .cart-topright-cellphone{
+        display: none;
     }
 }
