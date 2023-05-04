@@ -2473,7 +2473,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     .content img{
         margin-left: auto;
         margin-top: auto;
-        width: 350px;
+        width: 100%;
         display: block;
         margin: 0 auto;
     }
