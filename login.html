@@ -7,8 +7,10 @@
     <title>會員</title>
     <link rel="stylesheet" href="css/style-login.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <script src="../js/vue.global.js"></script>
 </head>
 <body>
+    <div id="app">
     <div class="wrapper-login">
         <div class="top-2">
             <a href="index.html"><img src="images/logo-2.png" alt=""></a>
@@ -46,11 +48,14 @@
 
         <div class="login-content">
             <div class="form_login">
-                <form action="">
+                <form action="" class="form_login_2">
                 <ul>
                     <li><button class="register">註冊</button><button class="login">登入</button></li>
-                    <li><input type="text" class="accountnumber" placeholder="帳號"></li>
-                    <li><input type="text" class="password" placeholder="密碼"></li>
+                    <li><input type="text" class="accountnumber" placeholder="帳號" ></li>
+                    <li class="password_parent"><input :type="inputType" class="password" placeholder="密碼">
+                                                <i class="fa-solid fa-eye-slash" v-if="!showPassword" @click="toggleShowPassword"></i>
+                                                <i class="fa-solid fa-eye" v-if="showPassword" @click="toggleShowPassword"></i>
+                    </li>
                     <li>
                         <div class="keeplogin">
                         <input type="checkbox"><p>保持登入狀態</p>
@@ -98,6 +103,8 @@
 
 
     </div>
+
+</div>
     <script>
     
         document.addEventListener("click", function(e){
@@ -125,6 +132,27 @@
     
     
         })
+    </script>
+    <script>
+        Vue.createApp({
+            data(){     // 變數放這裡!
+                return {
+      
+                    showPassword:false,
+                }
+            },
+            methods:{
+                toggleShowPassword(){
+                    this.showPassword = !this.showPassword;
+                }
+            },
+            computed:{
+                inputType(){
+                    return this.showPassword ? 'text' :'password';
+                }
+            }   
+           
+        }).mount('#app')
     </script>
 </body>
 </html>

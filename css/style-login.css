@@ -15,8 +15,27 @@
     /* z-index: 2; */
 }
 
+.password_parent{
+    position: relative;
+}
 
+.fa-eye-slash{
+position: absolute;
+right: 16%;
+top:20px;
+cursor: pointer;
+}
 
+.fa-eye{
+    position: absolute;
+right: 16%;
+top:20px;
+cursor: pointer;
+}
+
+.form_login_2{
+    width: 100%;
+}
 
 
 
@@ -2107,6 +2126,13 @@ margin-left: 125px;
     .footer-2 h1{
         text-align: left;
     }
+
+    .fa-eye-slash, .fa-eye{
+        position: absolute;
+        right: 5%;
+        top:20px;
+    }
+        
 
 
         
