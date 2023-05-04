@@ -1692,6 +1692,11 @@
 
 .course-box{
     display: flex;
+    flex-wrap:wrap;
+}
+
+.kbCourse{
+    display: flex;
 }
 
 .name{
