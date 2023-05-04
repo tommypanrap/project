@@ -872,9 +872,12 @@
         padding: 10px;
         box-sizing: border-box;
     }
+    .mall-1 a{
+        width: auto;
+    }
 
     .mall-1 img{
-        
+        width: 100%;
     }
 
 

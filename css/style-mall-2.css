@@ -1006,6 +1006,7 @@
 
     .product{
         flex-direction: column;
+        width: 100%;
     }
     .product-photo{
         flex-direction: row;
@@ -1015,7 +1016,8 @@
         width: 100%;
     }
     .product-photo img{
-        width: 120px;
+        /* width: 120px; */
+        width: 100%;
     }
     .product-statement{
         margin: 0;
@@ -1074,5 +1076,9 @@
     }
     .cart-topright-cellphone{
         display: none;
+    }
+
+    .product-photo-2{
+        width: 33%;
     }
 }
