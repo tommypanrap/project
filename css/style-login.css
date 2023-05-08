@@ -2136,6 +2136,24 @@ margin-left: 125px;
     .password{
         width: 100%;
     }
+    .row{
+        width: 100%;
+        display: block;
+    }
+    .inputStyle{
+        width: 100%;
+    }
+    .inputStyle:nth-child(1){
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    .accountnumber_register{
+        width: 100%;
+        margin-top: 20px;
+    }
+
+
     .form_login ul>li:nth-child(4){
         margin-left: 0;
     }
