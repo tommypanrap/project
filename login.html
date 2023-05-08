@@ -48,30 +48,51 @@
 
         <div class="login-content">
             <div class="form_login">
-                <form action="" class="form_login_2">
+                <div class="form_login_2">
+                <!-- <form action="" class="form_login_2"> -->
+               
+
                 <ul>
-                    <li><button class="register">註冊</button><button class="login">登入</button></li>
-                    <li><input type="text" class="accountnumber" placeholder="帳號" ></li>
-                    <li class="password_parent"><input :type="inputType" class="password" placeholder="密碼">
+                    <li><button class="register" id="register" @click="show('register')">註冊</button>
+                        <button class="login selected" id="login" @click="show('login')">登入</button></li>
+
+                    <li v-show="this.showWhat === 'login' "><input type="text" class="accountnumber" placeholder="帳號" ></li>
+                    <li class="password_parent" v-show="this.showWhat === 'login' " ><input :type="inputType" class="password" placeholder="密碼">
                                                 <i class="fa-solid fa-eye-slash" v-if="!showPassword" @click="toggleShowPassword"></i>
                                                 <i class="fa-solid fa-eye" v-if="showPassword" @click="toggleShowPassword"></i>
                     </li>
-                    <li>
+
+                    
+                    <li v-show="this.showWhat === 'login' ">
                         <div class="keeplogin">
                         <input type="checkbox"><p>保持登入狀態</p>
                         </div>
                         <a href=""><p>忘記密碼</p></a></li>
-                    <li><button class="btn_login">登入</button></li>
-                    <li>
+                    <li v-show="this.showWhat === 'login' "><button class="btn_login">登入</button></li>
+                    <li v-show="this.showWhat === 'login' ">
                         <div class="register_noaccount">
                         <p>還沒有帳號嗎?</p><a href="">立即註冊</a>
                         </div>
                     </li>
-                    <li><p>或透過以下方式登入:</p></li>
-                    <li><i class="fa-brands fa-facebook"></i>
+                    <li v-show="this.showWhat === 'login' "><p>或透過以下方式登入:</p></li>
+                    <li v-show="this.showWhat === 'login' "><i class="fa-brands fa-facebook"></i>
                         <i class="fa-brands fa-line"></i></li>
+
+                    
+                    <div class="row" v-show="this.showWhat === 'register' ">
+                    <li v-show="this.showWhat === 'register' "><input type="text" class="inputStyle" placeholder="姓"></li>
+                    <li class="password_parent" v-show="this.showWhat === 'register' "><input :type="inputType" class="inputStyle" placeholder="名">
+                    </li>
+                    </div>
+                    <li v-show="this.showWhat === 'register' "><input type="text" class="accountnumber_register" placeholder="帳號" ></li>
+                    <li class="password_parent" v-show="this.showWhat === 'register' "><input :type="inputType" class="password" placeholder="密碼"></li>
+                    <li class="password_parent" v-show="this.showWhat === 'register' "><input :type="inputType" class="password" placeholder="確認密碼"></li>
+                    
+                    <li v-show="this.showWhat === 'register' "><button class="btn_login">註冊</button></li>
+
                 </ul>
-                </form>
+                <!-- </form> -->
+                </div>
             </div>
                 
                 
@@ -105,6 +126,9 @@
     </div>
 
 </div>
+
+    <script src="js/login.js"></script>
+
     <script>
     
         document.addEventListener("click", function(e){
@@ -139,11 +163,19 @@
                 return {
       
                     showPassword:false,
+
+                    showWhat:'login',
+
+
                 }
             },
             methods:{
                 toggleShowPassword(){
                     this.showPassword = !this.showPassword;
+                },
+                show(e){
+                    this.showWhat = e;
+                    // alert(this.showWhat);
                 }
             },
             computed:{

@@ -816,11 +816,15 @@ cursor: pointer;
 .login{
     background-color: white;
     border: none;
-    border-bottom:3px solid rgb(193, 115, 44);
+    /* border-bottom:3px solid rgb(193, 115, 44); */
     font-size: 20px;
     width: 90px;
     height: 70px;
     /* color:white; */
+}
+
+.selected{
+    border-bottom:3px solid rgb(193, 115, 44);
 }
 
 .accountnumber{
@@ -831,8 +835,38 @@ cursor: pointer;
     border: 1px solid rgb(193, 115, 44);
     padding:10px 20px;
     box-sizing: border-box;
-
 }
+
+.accountnumber_register{
+    margin: 0px 0 20px;
+    height: 60px;
+    font-size: 20px;
+    width: 650px;
+    border: 1px solid rgb(193, 115, 44);
+    padding:10px 20px;
+    box-sizing: border-box;
+}
+
+.inputStyle{
+    margin: 20px 0 20px;
+    height: 60px;
+    font-size: 20px;
+    width: 320px;
+    border: 1px solid rgb(193, 115, 44);
+    padding:10px 20px;
+    box-sizing: border-box;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    width: 72.3%;
+    margin: 0 auto;
+}
+
+/* .row .inputStyle:nth-child(2) {
+    margin-left: 10px;
+} */
 
 .password{
     margin: 0 0 20px;
