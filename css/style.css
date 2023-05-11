@@ -2177,6 +2177,10 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     width: 100%;
 }
 
+.wrapper>.top>.header>ul>li:nth-child(4) .heightafterclick{
+    max-height: 200px;
+}
+
 @media screen and (max-width: 1200px){
    
     
@@ -2413,7 +2417,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
         /* border-bottom: none; */
     }
 
-    .wrapper>.top>ul>li:nth-child(4) .heightafterclick{
+    .wrapper>.top>.header>ul>li:nth-child(4) .heightafterclick{
         max-height: 200px;
     }
 
@@ -2457,6 +2461,15 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     }
 
     .wrapper>.top>ul>li:nth-child(4) ol{
+        position: static;
+        display: block;
+        max-height:0px;
+        width: auto;
+        text-align: center;
+        background-color: transparent;
+        
+    }
+    .wrapper>.top>.header>ul>li:nth-child(4) ol{
         position: static;
         display: block;
         max-height:0px;
@@ -2609,7 +2622,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
        
     }
 
-    .wrapper>.top>ul>li:nth-child(4) ol{
+    .wrapper>.top>.header>ul>li:nth-child(4) ol{
         position: static;
         display: block;
         max-height:0px;
@@ -2738,7 +2751,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
         /* border-bottom: none; */
     }
 
-    .wrapper>.top>ul>li:nth-child(4) .heightafterclick{
+    .wrapper>.top>.header>ul>li:nth-child(4) .heightafterclick{
         max-height: 200px;
     }
 
@@ -3262,7 +3275,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
        
     }
 
-    .wrapper>.top>ul>li:nth-child(4) ol{
+    .wrapper>.top>.header>ul>li:nth-child(4) ol{
         position: static;
         display: block;
         max-height:0px;
@@ -3391,7 +3404,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
         /* border-bottom: none; */
     }
 
-    .wrapper>.top>ul>li:nth-child(4) .heightafterclick{
+    .wrapper>.top>.header>ul>li:nth-child(4) .heightafterclick{
         max-height: 200px;
     }
 
