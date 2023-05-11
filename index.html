@@ -22,7 +22,13 @@
 
     <div class="wrapper">
         <div class="top">
-            <a href="index.html"><img src="images/logo.png" alt=""></a>
+          <div class="header">
+            <a href="index.html"> 
+              <!-- <picture> -->
+                <!-- <source srcset="images/logo_KeepMusic.png" media="(max-width:1150px)"> -->
+              <img src="images/logo.png" alt="">
+            <!-- </picture> -->
+            </a>
             <div class="typesetting"></div>
             <a href="login.html" class="user2"><i class="fa-solid fa-user "></i></a>
             <i class="fa-solid fa-cart-shopping cartforcellphone"></i>
@@ -45,13 +51,14 @@
                 <i class="fa-solid fa-cart-shopping"></i>
                 <div class="amountincart"></div>
             
-            </li>
-            <li>
-              <a href="login.html"><i class="fa-solid fa-user"></i></a>
-          </li>
+              </li>
+              <li>
+                <a href="login.html"><i class="fa-solid fa-user"></i></a>
+              </li>
                 
             </ul>
-        </div> 
+        </div>
+      </div> 
 
         <!-- Slider main container -->
         <div class="swiper">
@@ -60,13 +67,17 @@
             
             <div class="swiper-slide">
                 <picture>
+                    
                     <source srcset="images/rwd_banner1.jpg" media="(max-width: 415px)">
+                    <!-- <source srcset="images/banner1_2.jpg" media="(max-width: 960px)"> -->
                 <img src="images/1.png" alt="">
                 </picture>
             </div>
             <div class="swiper-slide">
                 <picture>
+                    
                     <source srcset="images/rwd_banner2.jpg" media="(max-width: 415px)">
+                    <!-- <source srcset="images/banner2_2.jpg" media="(max-width: 960px)"> -->
                 <img src="images/banner2.png" alt="">
                 </picture>
             </div>
@@ -270,6 +281,7 @@
         const swiper = new Swiper('.swiper', {
         // Optional parameters
       //   direction: 'vertical',
+      autoHeight: true,
         loop: true,
 
         // If we need pagination
@@ -298,6 +310,11 @@
       breakpoints:{
         414:{
           slidesPerView:1,
+          spaceBetween: 30,
+        },
+        
+        900: {
+          slidesPerView:2,
           spaceBetween: 30,
         },
         1280: {
