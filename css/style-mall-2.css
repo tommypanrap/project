@@ -462,6 +462,9 @@
     font-weight: bold;
 }
 
+.deleteicon .deleteicon-2 .delete{
+    cursor: pointer;
+}
 
 .fa-cart-shopping{
     font-size: 20px;
@@ -1051,6 +1054,8 @@
     .cart-topright .cart-topright-row2 .deleteicon-2{
         border: none;
     }
+
+    
 
     .cart-cellphone-text-1{
         border:none;
