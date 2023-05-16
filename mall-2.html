@@ -7,37 +7,39 @@
     <title>購物商城</title>
     <link rel="stylesheet" href="css/style-mall-2.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <script src="https://unpkg.com/vue@3"></script>
 
 </head>
 <body>
+    <div id="app">
     <div class="wrapper-page2">
         <div class="top-2">
             <a href="index.html"><img src="images/logo-2.png" alt=""></a>
             <div class="typesetting"></div>
             <a href="login.html" class="user2"><i class="fa-solid fa-user "></i></a>
             <div class="cart-cellphone-outside"><i class="fa-solid fa-cart-shopping cartforcellphone"></i>
-                <div class="amountincart amountincart-2">0</div>
+                <div v-if="productNumber > 0" class="amountincart amountincart-2">{{productNumber}}</div>
                 <div class="cart-topright cart-topright-cellphone">
                     <ul class="cart-cellphone-text">
                         <li class="cart-cellphone-text-1">購物車</li>
                     </ul>
                     <div class="cart-topright-row2">
-                        <img src="./images/guitar-mainPhoto.jpg" alt="">
+                        <img v-if="keep1123 > 0" src="./images/guitar-mainPhoto.jpg" alt="">
                         <ul class="cart-cellphone-text">
-                            <li class="cart-cellphone-text-1">KEEP-1123</li>
-                            <li class="cart-cellphone-text-1">NT 3,500</li>
-                            <li class="cart-topright-amount">數量 : <p class="cart-topright-amount-p">0</p></li>
+                            <li v-if="keep1123 > 0" class="cart-cellphone-text-1">KEEP-1123</li>
+                            <li v-if="keep1123 > 0" class="cart-cellphone-text-1">NT 3,500</li>
+                            <li v-if="keep1123 > 0" class="cart-topright-amount">數量 : <p class="cart-topright-amount-p">{{keep1123}}</p></li>
                         </ul>
                         <ul class="deleteicon cart-cellphone-text">
-                            <li class="deleteicon-2">
-                                <img src="./images/delete.png" alt="">
+                            <li class="deleteicon-2" @click="deleteProduction">
+                                <img v-if="keep1123 > 0" src="./images/delete.png" alt="">
                             </li>
                         </ul>
                     </div>
         
                     
                     <ul class="cart-topright-total-ul">
-                        <li class="cart-topright-total">合計 NT <p class="cart-topright-total-p">0</p></li><p></p>
+                        <li class="cart-topright-total">合計 NT <p class="cart-topright-total-p">{{total}}</p></li><p></p>
                     </ul>
                     <button class="cart-topright-buy">前往結帳</button>
                 </div>
@@ -62,33 +64,7 @@
                 <li><a href="mall.html">購物商城</a></li>
                 <li class="top-cart">
                         <a href="#" ><i class="fa-solid fa-cart-shopping"></i></a>
-                        
-                            <!-- <div class="cart-topright">
-                                <ul>
-                                    <li>購物車</li>
-                                </ul>
-                                <div class="cart-topright-row2">
-                                    <img src="./images/guitar-mainPhoto.jpg" alt="">
-                                    <ul>
-                                        <li>KEEP-1123</li>
-                                        <li>NT 3,500</li>
-                                        <li class="cart-topright-amount">數量 : <p class="cart-topright-amount-p">0</p></li>
-                                    </ul>
-                                    <ul class="deleteicon">
-                                        <li>
-                                            <img src="./images/delete.png" alt="">
-                                        </li>
-                                    </ul>
-                                </div>
-                    
-                                
-                                <ul class="cart-topright-total-ul">
-                                    <li class="cart-topright-total">合計 NT <p class="cart-topright-total-p">3,500</p></li><p></p>
-                                </ul>
-                                <button class="cart-topright-buy">前往結帳</button>
-                            </div> -->
-                        
-                        <div class="amountincart" >0</div>
+                        <div v-if="productNumber > 0" class="amountincart" >{{productNumber}}</div>
                     
                 </li>
                 <li>
@@ -117,7 +93,7 @@
             <div class="product">
                 <div class="mainPhoto"><img src="./images/guitar-mainPhoto.jpg" alt="" class="guitarPhoto"></div>
                 <div class="product-photo">
-                    <div class="photo-2 product-photo-2"><img src="./images/guitar-mainPhoto.jpg" alt="" class="guitar-2 guitarClick"></div>
+                    <div class="paddhoto-2 product-photo-2"><img src="./images/guitar-mainPhoto.jpg" alt="" class="guitar-2 guitarClick"></div>
                     <div class="photo-3 product-photo-2"><img src="./images/guitar-2.jpg" alt="" class="guitar-3 guitarClick"></div>
                     <div class="photo-4 product-photo-2"><img src="./images/guitar-3.jpg" alt="" class="guitar-4 guitarClick"></div>
                 </div>    
@@ -128,11 +104,11 @@
                 <!-- <p class="stock">2件庫存</p> -->
                 <div class="amountChoose">
                     <button type="button" class="btn_minus">-</button>
-                    <div class="amount"><input type="text" class="amount1" value="1"></div>     
-                    <button type="button" class="btn_plus">+</button>
+                    <div class="amount"><input type="text" class="amount1"  v-model="number1"></div>     
+                    <button type="button" class="btn_plus" @click="addOne">+</button>
                 </div>
                 <div class="button-buy-cart">
-                    <button type="button" class="btn_cart">加入購物車</button><br>
+                    <button type="button" class="btn_cart" @click="addToCart">加入購物車</button><br>
                     <button type="button" class="btn_buy">我要購買</button>
                 </div>
             </div>
@@ -154,7 +130,7 @@
         </div>
     </div>
 
-
+    </div>
     <script>
         document.addEventListener("click", function(e){
             if(e.target.classList.contains("guitarClick")){
@@ -166,13 +142,13 @@
                 guitarPhotopausestock.src = guitarPhoto2;
             }
 
-            if(e.target.classList.contains("btn_plus")){
-                // console.log(e.target);
-                let amount = e.target.previousElementSibling.querySelector("input.amount1")
-                let amountValue = parseInt(amount.value);
-                amountValue += 1; 
-                e.target.previousElementSibling.querySelector("input.amount1").value = amountValue;
-            }
+            // if(e.target.classList.contains("btn_plus")){
+
+            //     let amount = e.target.previousElementSibling.querySelector("input.amount1")
+            //     let amountValue = parseInt(amount.value);
+            //     amountValue += 1; 
+            //     e.target.previousElementSibling.querySelector("input.amount1").value = amountValue;
+            // }
 
             if(e.target.classList.contains("btn_minus")){
                 // console.log(e.target);
@@ -187,23 +163,23 @@
 
             if(e.target.classList.contains("btn_cart")){
                 
-                 let amount = e.target.closest("div.product-statement").querySelector("input.amount1").value;
-                 let amountValue = document.querySelector("div.amountincart").innerHTML;
-                 let amountValue3 = document.querySelector("p.cart-topright-amount-p").innerHTML;
-                 let amountValue4 = parseInt(amountValue3);
-                //  console.log(amountValue3);
-                 let amountValue2 = parseInt(amountValue);
-                 let amount2 = parseInt(amount);
-                 amountValue4 = amount2 + amountValue4;
-                 console.log(amountValue2);
-                //  console.log(amountValue);
-                document.querySelectorAll("div.amountincart")[0].innerHTML = 1;
-                 document.querySelectorAll("div.amountincart")[1].innerHTML = 1;
-                //  document.querySelector("div.amountincart").innerHTML = amountValue2;
+                //  let amount = e.target.closest("div.product-statement").querySelector("input.amount1").value;
+                //  let amountValue = document.querySelector("div.amountincart").innerHTML;
+                //  let amountValue3 = document.querySelector("p.cart-topright-amount-p").innerHTML;
+                //  let amountValue4 = parseInt(amountValue3);
+
+                //  let amountValue2 = parseInt(amountValue);
+                //  let amount2 = parseInt(amount);
+                //  amountValue4 = amount2 + amountValue4;
+                //  console.log(amountValue2);
+
+                // document.querySelectorAll("div.amountincart")[0].innerHTML = 1;
+                //  document.querySelectorAll("div.amountincart")[1].innerHTML = 1;
+
                 document.querySelectorAll("div.amountincart")[0].style.display = "block";
                  document.querySelectorAll("div.amountincart")[1].style.display = "block";
-                 document.querySelector("p.cart-topright-amount-p").innerHTML = amountValue4 ;
-                 document.querySelector("p.cart-topright-total-p").innerHTML = amountValue4 * 3500 ;
+                //  document.querySelector("p.cart-topright-amount-p").innerHTML = amountValue4 ;
+                //  document.querySelector("p.cart-topright-total-p").innerHTML = amountValue4 * 3500 ;
 
                  let carttoprightcellphone = document.querySelector("div.cart-topright-cellphone");
                  console.log(carttoprightcellphone);
@@ -281,6 +257,41 @@
     
         })
     </script>
+
+<script>
+    Vue.createApp({
+        data(){     // 變數放這裡!
+            return {
+                number1:'1',
+                keep1123:'0',
+                total:'',
+                productNumber:'0',
+            }
+        },
+        methods:{
+            deleteProduction(){
+                this.keep1123 = 0;
+                this.total = this.keep1123 * 3500;
+                this.productNumber = 0;
+            },
+            addToCart(){
+                this.number1 = parseInt(this.number1);
+                this.keep1123 = parseInt(this.keep1123);
+                this.keep1123 += this.number1;
+                this.total = this.keep1123 * 3500;
+                this.productNumber = 1;
+            },
+            addOne(){
+                this.number1 = parseInt(this.number1);
+                this.number1 += 1;
+            }
+        },
+        computed:{
+           
+        }   
+       
+    }).mount('#app')
+</script>
 
     
 </body>
