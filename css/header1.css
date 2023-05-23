@@ -1,0 +1,94 @@
+.top{
+    height: 55px;
+    width: 100%;
+    background-color: rgba(31, 41, 50, .46);
+    position:absolute;
+    display:flex;
+    z-index: 2;
+    position: fixed;
+}
+
+.header{
+    max-width: 1520px;
+    display:flex;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.top img{
+    height: 50px;
+    margin-top: 5px;
+    margin-left: 30px;
+}
+.top ul{
+    display:flex;
+    width: 50%;
+    line-height: 55px;
+    height: 55px;
+}
+
+
+.user2{
+    display: none;
+}
+
+.top ul li{
+    flex-grow: 1;
+}
+
+.top ul li:last-child{
+    flex-grow: 0;
+    margin-right: 30px;
+}
+
+.top ul li:nth-child(6){
+    flex-grow: 0;
+}
+
+.top ul li a{
+    text-decoration: none;
+    color:white;
+    font-weight:bold;
+    font-size: 1rem;
+    display: block;
+    text-align: left;
+    margin-left: 15px;
+}
+
+.top ul>li:nth-child(4){
+    position:relative;
+}
+
+
+.top ul li a:hover{
+    color:rgb(235, 160, 92);
+}
+
+.top ol{
+    position:absolute;
+    top :100%;
+    left :0 ;
+    width: 170px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .5s;
+}
+
+.top>ul>li:nth-child(4):hover ol{
+    max-height: 200px;
+}
+
+.top .fa-bars{
+    color:white;
+    margin-top: 20px;
+    font-size: 20px;
+    display:none;
+}
+
+.top-2 .fa-bars{
+    color:rgb(0, 0, 0);
+    margin-top: 20px;
+    font-size: 20px;
+    display:none;
+}
