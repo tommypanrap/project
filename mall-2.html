@@ -210,23 +210,7 @@
 
         });
 
-        let inputAmount1 = document.querySelector("input.amount1");
-        inputAmount1.addEventListener("keydown",function(e){
-            
-            if( (e.which >= 48 && e.which <= 57) || e.which == 8 ){ 
-  
-            }else{
-            e.preventDefault(); 
-            }
-
-
-        })
-
-        inputAmount1.addEventListener('keyup',function(e){
-        // console.log(e.target.value); //欄位輸123 出現123
-        let str = (e.target.value).replace(/\D/g,'');  //replace找到某個字 用別的字串取代;正規式用兩個 / 字元; \D 表示非數字 +g是global 表示找到的全部的非數字都會轉空字串
-        e.target.value = str; //新的資料再放回欄位上
-    });
+        
             
     </script>
      <script>
@@ -287,11 +271,33 @@
             },
             minusOne(){
                 this.number1 = parseInt(this.number1);
+                if(this.number1 > 0 ){
                 this.number1 -= 1;
+                }else{
+                }
             },
         },
         computed:{
            
+        },
+        mounted(){
+            let inputAmount1 = document.querySelector("input.amount1");
+            inputAmount1.addEventListener("keydown",function(e){
+                
+                if( (e.which >= 48 && e.which <= 57) || e.which == 8 ){ 
+    
+                }else{
+                e.preventDefault(); 
+                }
+
+
+            })
+
+            inputAmount1.addEventListener('keyup',function(e){
+            // console.log(e.target.value); //欄位輸123 出現123
+            let str = (e.target.value).replace(/\D/g,'');  //replace找到某個字 用別的字串取代;正規式用兩個 / 字元; \D 表示非數字 +g是global 表示找到的全部的非數字都會轉空字串
+            e.target.value = str; //新的資料再放回欄位上
+    });
         }   
        
     }).mount('#app')
