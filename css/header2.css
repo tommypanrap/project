@@ -1,12 +1,19 @@
 .top-2{
     height: 55px;
     width: 100%;
-    /* min-width: 1200px; */
     background-color: rgba(255, 255, 255);
     border-bottom: 2px solid rgba(212, 149, 91);
     display:flex;
     position: fixed;
     z-index: 2;
+}
+
+.header{
+    max-width: 1520px;
+    display:flex;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-between;
 }
 
 .top-2 img{
@@ -33,9 +40,6 @@
     flex-grow: 0;
 }
 
-.top-2 ul>li:first-child > a{
-    color:rgb(235, 160, 92);
-}
 
 .top-2 ol{
     background-color:rgb(193, 115, 44);
@@ -51,4 +55,42 @@
 
 .top-2>.header>ul>li:nth-child(4):hover ol{
     max-height: 200px;
-} 
+}
+
+.top-2 ul a{
+    text-decoration: none;
+    color:black;
+    font-weight: bold;
+    font-size: 1rem;
+    display: block;
+    text-align:center;
+    text-align: left;
+    margin-left: 15px;
+}
+
+.top-2 ol a{
+    color:rgb(255, 227, 195);
+    line-height: 50px;
+
+}
+
+.top-2 ul a:hover{
+    color:rgb(235, 160, 92);
+}
+
+.top-2 ol a:hover{
+    color:rgb(255, 255, 255);
+}
+
+.top-2 .fa-bars{
+    color:rgb(0, 0, 0);
+    margin-top: 20px;
+    font-size: 20px;
+    display:none;
+}
+
+
+
+
+
+
